@@ -4,7 +4,7 @@ Art Portfolio For MadGiraffeStudios
 
 Dev Process for getting issues merged to main
 
-Creating a Branch for the project:
+#Creating a Branch for the project:
 
 - Clone the repository
 - Do a git pull from main if your local machine is not up to date with what is in main currently
@@ -18,7 +18,7 @@ Creating a Branch for the project:
     
     ***Do not push to main without a PR review***
     
-Pull Request Process:
+#Pull Request Process:
  - Once you've pushed your branch up to the repo, made all your commits and you're done with your work
  - Switch to the branch you created in the drop down and click on Pull Request as shown in the image below
 ![image](https://user-images.githubusercontent.com/22583143/87214893-ba38fc80-c2fe-11ea-9ca9-6a5632b55788.png)
@@ -29,7 +29,7 @@ Pull Request Process:
 - Click on the wheel next to reviewers on the right side of the panel and type in the name of the reviewer
 - Once they've reviewed your changes and all comments have been addressed. You can merge your changes
 
-Reviewing Pull Requests:
+#Reviewing Pull Requests:
 - Click on the Pull Request tab in the repository
 - You will see the open Pull Request, click on it then click on "Files Changed"
 - You will see a "diff" view, click on any of the new changes to add a comment as you see fit - this could be a logic, syntax, feedback(i.e this looks good or I think you should change this)
