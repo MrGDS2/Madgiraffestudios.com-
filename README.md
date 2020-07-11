@@ -22,3 +22,7 @@ Pull Request Process:
  - Once you've pushed your branch up to the repo, made all your commits and you're done with your work
  - Switch to the branch you created in the drop down and click on Pull Request as shown in the image below
 ![image](https://user-images.githubusercontent.com/22583143/87214893-ba38fc80-c2fe-11ea-9ca9-6a5632b55788.png)
+- Add a title relating to what the change is about in the top field
+- In the big text area, list out an overview of the changes in your PR
+- Click "create pull request at the bottom
+
