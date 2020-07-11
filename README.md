@@ -26,4 +26,14 @@ Pull Request Process:
 - In the big text area, list out an overview of the changes in your PR
 - Click "create pull request at the bottom
 ![image](https://user-images.githubusercontent.com/22583143/87214972-ac37ab80-c2ff-11ea-8c58-f5471ee1f403.png)
+- Click on the wheel next to reviewers on the right side of the panel and type in the name of the reviewer
+- Once they've reviewed your changes and all comments have been addressed. You can merge your changes
+
+Reviewing Pull Requests:
+- Click on the Pull Request tab in the repository
+- You will see the open Pull Request, click on it then click on "Files Changed"
+- You will see a "diff" view, click on any of the new changes to add a comment as you see fit - this could be a logic, syntax, feedback(i.e this looks good or I think you should change this)
+- Once you're done making your comments on the file, click on "finish review" on the top right corner and submit
+- You can also click "Approve" so that the request can be merged to "main" or even select "Request changes"
+- All done
 
