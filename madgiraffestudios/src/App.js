@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import './App.scss';
-
-import NavigationBar from '../src/components/Navigation/NavigationBar'
+import NavigationBar from './components/Navigation/NavigationBar';
 function App() {
   return (
- <NavigationBar/>
-  );
+
+  
+      <NavigationBar />
+      // <Header/>
+      // <Bookings/>
+  )
 }
 
 export default App;
