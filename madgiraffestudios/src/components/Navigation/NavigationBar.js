@@ -6,7 +6,9 @@ import giraffeicon from '../../Images/icon.png';
 
 const NavigationBar = () => (
 
-<div className="container">
+<div className="pt-4 container" >
+    
+
     <Navbar expand="lg">
         <Navbar.Brand href="/home"><img src={giraffeicon} height="50px" width="50px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,6 +21,8 @@ const NavigationBar = () => (
             </Nav>
         </Navbar.Collapse>
     </Navbar>
+    
+
     </div>
 )
 
