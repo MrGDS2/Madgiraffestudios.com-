@@ -1,12 +1,7 @@
 import React from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import giraffeicon from '../../Images/icon.png';
 import photoshoots from '../../Images/aboutPage/photoshoot/brandon_shoot.jpg';
 import graphicdesign from '../../Images/aboutPage/graphics/graphic02.png';
-import uxDesin from '../../Images/aboutPage/ux/undraw_mobile_ux.png';
 import drawing from '../../Images/aboutPage/drawings/lucy_ill.jpeg';
-import { HOME } from '../../Constants/routes';
 import { SocialIcon } from 'react-social-icons';
 
 import './About.scss';
@@ -32,7 +27,7 @@ const About = () => (
                 <div className="col-md-6 mt-5 p-3" id="second">
 
                     <h5 className="font-weight-bold primary-color">Photo Shoots</h5><p className="w-75 text-muted">
-                        At Madgiffare studios I am dedicated to capturing the moment as imagined, by you! The photoshoot is yours, this is your art. Look your best in a variety of shoots including, product photography, portraits, street photography, and events.</p>
+                        At Mad Giraffe Studios, I am dedicated to capturing the moments as imagined, by you! The photo shoot is yours, this is your art. Look your best in a variety of shoots including, product, event and street photography, portraits, and more.</p>
                 </div>
                 <div>
 
@@ -40,7 +35,7 @@ const About = () => (
 
                 <div className="row">
                     <div className="col-md-6 mt-5 p-3" id="second">
-                        <h5 className="font-weight-bold primary-color">Graphic Design</h5><p className="w-75 text-muted">Your improvement as a business is my priority, what a business displays is extremely important to how they’re portrayed. Using custom logos, and having a strong Social media presence graphically will truly boost Company Branding and popularity.</p>
+                        <h5 className="font-weight-bold primary-color">Graphic Design</h5><p className="w-75 text-muted">Your improvement as a business is my priority. What a business displays is extremely important to how they’re portrayed. Using custom logos, and having a strong social media presence graphically will truly boost a company's brand and popularity.</p>
                     </div>
                     <div className="col-md-6" id="first">
                         <img src={graphicdesign} alt="performance" className="img-fluid rounded float-right" />
@@ -54,43 +49,12 @@ const About = () => (
                     </div>
                     <div className="col-md-6 mt-5 p-3" id="second">
                         <h5 className="font-weight-bold primary-color">Illustrations</h5>
-                        <p className="w-75 text-muted">Now imagine having your favorite photo of yourself, or a loved one reimagined through in an Illustration.Choose from a hand drawing,painting or digital art and let me bring your imagination to life.                                                                                            Get started today!
+                        <p className="w-75 text-muted">Now imagine having a favorite photo of yourself, or a loved one re-imagined through in an Illustration. Choose from a hand drawing, painting or digital art and let me bring your imagination to life.                                                                                            
                            </p>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-
-        <div class="footer_bg pt-5 pb-3 bg-light text-center">
-            <div class="container">
-                <div class="row">
-                    <div class=" col-md-4 text-center">
-                        <a href={HOME}> <img src={giraffeicon} height="50px" alt="logo" id="footer-logo" /></a>
-                    </div>
-                    <div class=" col-md-4 text-center">
-                        <div class="row">
-                            <div className="col-md-2">
-
-                                <p><SocialIcon url="https://www.instagram.com/madgiraffestudios/" bgColor="#8d18b4" />
-                                </p>
-                            </div>
-                            <div className="col-md-2">
-                                <p><SocialIcon url="https://twitter.com/MadGiraffeStud1" bgColor="#8d18b4" />
-                                </p>
-                            </div>
-                            <div className="col-md-2">
-                                <p>
-                                    <SocialIcon url="https://www.linkedin.com/in/mackenzie-heslin-scott-70ab4a116/" bgColor="#8d18b4" />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 bg-light"><h6 class="font-weight-bolder line-height">CONTACT INFORMATION</h6><p>Madgiraffestudios@gmail.com</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </React.Fragment>

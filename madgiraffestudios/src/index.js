@@ -2,20 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './index.css';
-import App from './App';
 import './App.scss';
 import * as serviceWorker from './serviceWorker';
 import NavigationBar from './components/Navigation/NavigationBar'
 import About from './components/About/About';
 import Home from './components/Home/home';
-import { ABOUT } from './Constants/routes';
+
+
 
 const routing = (
   <Router>
     <NavigationBar />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path={ABOUT} exact component={About} />
+      <Route path="/about" exact component={About} />
     </Switch>
   </Router>
 
