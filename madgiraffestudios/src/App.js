@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.scss';
+import React, {Component} from 'react';
+import Home from './components/Home/home';
 
-import NavigationBar from './components/Navigation/NavigationBar';
-function App() {
+class App extends Component{
+  render() {
   return (
-      <NavigationBar />
+     <Home/>
   )
+  }
 }
 
 export default App;

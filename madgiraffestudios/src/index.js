@@ -6,21 +6,19 @@ import './App.scss';
 import * as serviceWorker from './serviceWorker';
 import NavigationBar from './components/Navigation/NavigationBar';
 import Home from './components/Home/Home';
-import { WORK } from './Constants/routes';
+import About from './components/About/About';
 
 const routing = (
     <Router>
         <NavigationBar/>
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path={WORK} exact component={WORK} />
+          <Route path="/about" exact component={About} />
         </Switch>
-       
     </Router>
-  
-  
-  
   )
+
+
 ReactDOM.render(routing, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
