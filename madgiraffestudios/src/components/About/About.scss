@@ -1,0 +1,26 @@
+.about-content {
+    
+}
+#headDiv {
+    background-color: grayscale($color: #f8f9fa);
+    
+}
+@media only screen and (max-width:1024px){
+     #second {
+         order: 2!important;
+         
+     }
+  #first {
+        order: 1!important;
+        
+     }
+     
+  
+
+}
+
+
+#footer-logo{
+    margin-bottom: 45px;
+}
+
