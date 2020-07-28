@@ -2,6 +2,11 @@
     background-color: grayscale($color: #f8f9fa);
 }
 
+#about{
+
+    padding-bottom: .02px;
+}	
+
 @media only screen and (max-width:1024px){
      #second {
          order: 2!important;
@@ -11,7 +16,11 @@
      }
 }
 
-#footer-logo{
-    margin-bottom: 45px;
-}
+.img-fluid{
 
+    box-shadow: 5px 10px 18px #888888;
+ }
+
+#about-text{
+    padding-bottom: .02px;
+}

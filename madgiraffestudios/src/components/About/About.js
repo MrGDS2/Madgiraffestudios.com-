@@ -12,8 +12,8 @@ const About = () => (
             <div className="container" id="about">
                 <div className="text-center pt-5 mx-auto w-50">
                     <h1 className="primary-color font-weight-bold p-3">Mad Giraffe STuDios</h1>
-                    <p className="font-weight-900 mb-5">
-                        The best way to spark change is to start a conversation, and there’s no better way to start conversation than with art. For me, the best way to communicate with others is through art; it allows tough conversations to be had and to be learned. Art inspires me to make social change and inspire others to truly think.
+                    <p className="font-weight-900 mb-5" id="about-text">
+                        There’s no better way to start a conversation than with art. It allows tough conversations to be had, thus allowing us to grow . Art inspires me to make social change and inspire others to follow suit.
             </p>
                 </div>
             </div>
