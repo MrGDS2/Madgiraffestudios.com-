@@ -1,15 +1,57 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 $font-size-base: 0.9rem !default; 
+$font-family-sans-serif:  "Poppins", Helvetica, Arial, sans-serif !default;
+$bg-secondary: #F9F8FD;
+$bg-primary: #8d18b4;
+$white-color: #FFFF;
+
 .navbar{
-   font-size: 20px;
-  
+font-size: 20px;
 }
-body{
 
-        font-family: 'Poppins',sans-serif;
-
+.main-page {
+    background-color: $bg-secondary;
 }
+
+.emphasized-text {
+    font-size: 4rem;
+    line-height: 0.9;
+}
+
+.booking-btn {
+    background-color: $bg-primary;
+    color:$white-color;
+    width: 10%;
+    font-weight: bold;
+    &:hover {
+        color: $white-color
+    }
+}
+
+.oblique-text {
+    font-style: oblique;
+    font-size: 20px;
+}
+
 .primary-color{
     color: #8d18b4;
-    
+}
+
+.painter-img {
+    margin-left: -250px;
+
+    @media only screen and (max-width:1024px){
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .elevator-pitch { text-align: center;}
+    .emphasized-text { font-size: 2rem;}
+}
+
+@media only screen and (max-width:1024px) {
+    .booking-btn { width: auto;}
 }

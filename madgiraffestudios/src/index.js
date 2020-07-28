@@ -4,23 +4,19 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './index.css';
 import './App.scss';
 import * as serviceWorker from './serviceWorker';
-import NavigationBar from './components/Navigation/NavigationBar'
+import NavigationBar from './components/Navigation/NavigationBar';
+import Home from './components/Home/Home';
 import About from './components/About/About';
-import Home from './components/Home/home';
-
-
 
 const routing = (
-  <Router>
-    <NavigationBar />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" exact component={About} />
-    </Switch>
-  </Router>
-
-)
-
+    <Router>
+        <NavigationBar/>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path="/about" exact component={About} />
+        </Switch>
+    </Router>
+  )
 
 
 ReactDOM.render(routing, document.getElementById('root'));
