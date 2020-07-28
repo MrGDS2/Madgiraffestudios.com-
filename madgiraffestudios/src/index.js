@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import NavigationBar from './components/Navigation/NavigationBar'
 import About from './components/About/About';
 import Home from './components/Home/home';
-
+import Footer from './components/Footer/footer'
 
 
 const routing = (
@@ -17,7 +17,9 @@ const routing = (
       <Route exact path="/" component={Home} />
       <Route path="/about" exact component={About} />
     </Switch>
+    <Footer/>
   </Router>
+  
 
 )
 
