@@ -2,17 +2,17 @@ import React from 'react';
 import photoshoots from '../../Images/aboutPage/photoshoot/brandon_shoot.jpg';
 import graphicdesign from '../../Images/aboutPage/graphics/graphic02.png';
 import drawing from '../../Images/aboutPage/drawings/lucy_ill.jpeg';
-import './About.scss';
+import { SocialIcon } from 'react-social-icons';
 
-//TODO: FIX NAV LINKS
+import './About.scss';
 const About = () => (
 
     <React.Fragment>
         <div className="bg-light" id="topParent">
-            <div className="container" id="about-content">
+            <div className="container" id="about">
                 <div className="text-center pt-5 mx-auto w-50">
                     <h1 className="primary-color font-weight-bold p-3">Mad Giraffe STuDios</h1>
-                    <p className="about-text font-weight-900 mb-5">
+                    <p className="font-weight-900 mb-5">
                         The best way to spark change is to start a conversation, and there’s no better way to start conversation than with art. For me, the best way to communicate with others is through art; it allows tough conversations to be had and to be learned. Art inspires me to make social change and inspire others to truly think.
             </p>
                 </div>

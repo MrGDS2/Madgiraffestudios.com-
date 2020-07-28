@@ -1,13 +1,9 @@
-#about-content {
-    padding-bottom: .02px;
+.about-content {
+    
 }
 #headDiv {
     background-color: grayscale($color: #f8f9fa);
     
-}
-.img-fluid{
-
-   box-shadow: 5px 10px 18px #888888;
 }
 @media only screen and (max-width:1024px){
      #second {
@@ -16,16 +12,13 @@
      }
   #first {
         order: 1!important;
-     
-       
+        
      }
      
   
 
 }
-.about-text{
-    font-family: 'Shadows Into Light Two', cursive;
-}
+
 
 #footer-logo{
     margin-bottom: 45px;
