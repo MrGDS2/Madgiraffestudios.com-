@@ -1,5 +1,5 @@
 import React from 'react';
-import Painter from '../../Images/artist.svg'
+import Painter from '../../Images/landing-img.jpeg'
 import About from '../About/About';
 
 const Home = () => {
