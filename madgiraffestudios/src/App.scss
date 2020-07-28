@@ -23,7 +23,7 @@ font-size: 20px;
 .booking-btn {
     background-color: $bg-primary;
     color:$white-color;
-    width: 20%;
+    width: 10%;
     font-weight: bold;
     &:hover {
         color: $white-color
@@ -32,15 +32,26 @@ font-size: 20px;
 
 .oblique-text {
     font-style: oblique;
-   font-size: 20px;
-  
+    font-size: 20px;
 }
-body{
 
-        font-family: 'Poppins',sans-serif;
-
-}
 .primary-color{
     color: #8d18b4;
-    
+}
+
+.painter-img {
+    margin-left: -400px;
+
+    @media only screen and (max-width:1024px){
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .elevator-pitch { text-align: center;}
+    .emphasized-text { font-size: 2rem;}
+}
+
+@media only screen and (max-width:1024px) {
+    .booking-btn { width: auto;}
 }
