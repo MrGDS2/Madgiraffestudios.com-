@@ -6,7 +6,7 @@ const Home = () => {
 
     return (
         <React.Fragment>
-            <div className="main-page">
+            <div className="main-page" id="home">
                     <div className="row mx-5 pt-4 elevator-pitch">
                         <div className="col-md-10 col-xs-12 mt-5 ">
                             <strong><p className="emphasized-text">The best way to spark change</p></strong>
