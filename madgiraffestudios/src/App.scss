@@ -15,6 +15,7 @@ font-size: 20px;
     background-color: $bg-secondary;
 }
 
+
 .emphasized-text {
     font-size: 4rem;
     line-height: 0.9;
@@ -39,6 +40,12 @@ font-size: 20px;
     color: #8d18b4;
 }
 
+.bg-primary {
+    background-color: $bg-primary!important;
+}
+#modal-textarea {
+    height: 150px;
+}
 .painter-img {
     margin-left: -250px;
 
