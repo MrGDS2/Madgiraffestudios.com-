@@ -29,10 +29,34 @@ const Gallery = (props) => {
       description: 'A melanin queen '
       
     },
+    {
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/beach_shoot2.jpg?alt=media&token=0a46be1f-98ce-4cd9-b878-16aded6a43b8',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/beach_shoot2.jpg?alt=media&token=0a46be1f-98ce-4cd9-b878-16aded6a43b8',
+      startIndex: 2,
+      description: 'A melanin queen '
+      
+    },
+    {
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/beach_shoot2.jpg?alt=media&token=0a46be1f-98ce-4cd9-b878-16aded6a43b8',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/beach_shoot2.jpg?alt=media&token=0a46be1f-98ce-4cd9-b878-16aded6a43b8',
+      startIndex: 2,
+      description: 'A melanin queen '
+      
+    },
+    {
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/beach_shoot2.jpg?alt=media&token=0a46be1f-98ce-4cd9-b878-16aded6a43b8',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/beach_shoot2.jpg?alt=media&token=0a46be1f-98ce-4cd9-b878-16aded6a43b8',
+      startIndex: 2,
+      description: 'A melanin queen '
+      
+    },
+    
+    
+
   ];
 
   const galleryImages = gallery.map((img) => 
-    <div className="col-md-4  image-container img-wrap" key={img.startIndex} onClick={() =>imageClick(img.startIndex)}>
+    <div className="col-md-4 mb-4 image-container img-wrap" key={img.startIndex} onClick={() =>imageClick(img.startIndex)}>
       <img src={img.original} alt={img.description} width="310px" height="380px" className="rounded" />
     <div class="after">
       <span>{img.description}</span>

@@ -29,7 +29,7 @@ class Footer extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4 bg-light"><h6 className="font-weight-bolder line-height">CONTACT INFORMATION</h6><p>Madgiraffestudios@gmail.com</p>
+                    <div className="col-md-4"><h6 className="font-weight-bolder line-height">CONTACT INFORMATION</h6><p>Madgiraffestudios@gmail.com</p>
                     </div>
                 </div>
             </div>
