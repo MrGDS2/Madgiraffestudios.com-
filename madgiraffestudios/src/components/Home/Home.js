@@ -1,12 +1,13 @@
 import React from 'react';
-import Painter from '../../Images/landing-img.jpeg'
+import Painter from '../../Images/website-image.png';
 import About from '../About/About';
+import Gallery from '../Gallery/Gallery';
 
 const Home = () => {
 
     return (
         <React.Fragment>
-            <div className="main-page" id="home">
+<div className="main-page" id="home">
                     <div className="row mx-5 pt-4 elevator-pitch">
                         <div className="col-md-10 col-xs-12 mt-5 ">
                             <strong><p className="emphasized-text">The best way to spark change</p></strong>
@@ -16,11 +17,13 @@ const Home = () => {
                             <button type="button" className="btn btn-lg shadow-lg booking-btn mt-3 mb-5 p-3">Book Me</button>
                         </div>
                         <div className="col-md-2 painter-img mt-5">
-                            <img src={Painter} alt="painter" height="360px"/>
+                            <img src={Painter} alt="painter" className="rounded" height="400px"/>
                         </div>
                     </div>
             </div>
+
             <About/>
+            <Gallery/>
         </React.Fragment>
     );
 

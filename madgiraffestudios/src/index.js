@@ -8,13 +8,14 @@ import NavigationBar from './components/Navigation/NavigationBar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Footer from './components/Footer/footer';
-
+import Gallery from './components/Gallery/Gallery';
 const routing = (
     <Router>
         <NavigationBar/>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/gallery"  exact component={Gallery}/>
         </Switch>
         <Footer/>
     </Router>

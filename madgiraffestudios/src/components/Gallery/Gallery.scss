@@ -1,0 +1,55 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+.gallery{
+    margin-top: 200px;
+}
+
+.gallery-row{    
+
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+
+.image-container .after {
+    position: absolute;
+    top: 0;
+    width: 310px;
+    height: 380px;
+    display: none;
+   opacity: 80%;
+    font-size: 30px;
+    border-radius: 1%;
+
+}
+
+
+  .img-wrap span {
+  
+    position: absolute;
+    top:35%;
+    left: 10%;
+    color: #FFF;
+    font-family:  "Poppins", sans-serif ;
+
+  }
+
+
+  
+.image-container:hover .after {
+    display: block;
+    background: #4F3A65;
+}
+
+
+.exit-btn {
+    background-color: #F9F8FD;
+    color:rgb(0, 0, 0);
+    width: 100%;
+
+    font-weight: bold;
+    &:hover {
+        color: #8d18b4
+    }
+}
+
+
