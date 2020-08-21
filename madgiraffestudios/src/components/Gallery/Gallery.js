@@ -72,8 +72,6 @@ const Gallery = (props) => {
   const imageClick= (index) => {
     setModal(true);
     setImgIndex(index);
-    console.log('startindex', index);
-    console.log('modal index check', imageIndex);
   }
   return (
     <React.Fragment>
