@@ -13,7 +13,7 @@ return (
     <React.Fragment>
     <div className="pt-4 container" >
         <Navbar expand="lg">
-            <Navbar.Brand href="/home"><img src={giraffeicon} height="50px" width="50px" /></Navbar.Brand>
+            <Navbar.Brand href="/home"><img src={giraffeicon} height="50px" width="50px" alt="nav-icon"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto mx-auto nav nav-pills nav-justified" >
@@ -29,7 +29,7 @@ return (
         </Navbar>
     </div>
 
-    <Modal isOpen={displayModal} className="mt-5 text-center">
+    <Modal isOpen={displayModal} toggle={() => setDisplayModal(false)}   className="mt-5 text-center">
                <ModalHeader className="bg-primary text-white">Let's Work Together!</ModalHeader>
                 <ModalBody className="font-weight-bold">
                     <Form>
@@ -40,11 +40,25 @@ return (
                         </FormGroup>
                         <FormGroup>
                             <Label for="email" className="d-block text-left">Email</Label>
-                            <Input />
+                            <Input type="email"/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="subject" className="d-block text-left">Subject</Label>
-                            <Input type="textarea" id="modal-textarea"/>
+                            <Label for="phone" className="d-block text-left">Phone</Label>
+                            <Input type="tel"/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="email" className="d-block text-left">What would you like?</Label>
+                            <Input type="select">
+                                <option>Choose one</option>
+                                <option>Photo Shoot</option>
+                                <option>Graphic Design</option>
+                                <option>Illustration</option>
+                            </Input>
+                        </FormGroup>
+            
+                        <FormGroup>
+                            <Label for="subject" className="d-block text-left">Description</Label>
+                            <Input type="textarea" id="modal-textarea" required/>
                         </FormGroup>
                         <Button onClick={() => setDisplayModal(false)}>Send Request</Button>
                     </Form>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Painter from '../../Images/main-img.png'
 import Spark from '../../Images/spark.png'
 import About from '../About/About';
@@ -16,9 +16,9 @@ const Home = () => {
                         <strong><p className="emphasized-text primary-color">is to start a conversation.</p></strong>
                         <h5 className="pt-4">I try to capture the in between moments, the moments that most people take for granted.</h5>
                         <h5>Stories are not told they are assumed. <span className="oblique-text">~Kae, Creative Owner</span></h5>
-                        <span>
+                        <div>
                             <img src={Painter} alt="painter" className="main-img"/>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>
