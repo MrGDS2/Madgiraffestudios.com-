@@ -2,7 +2,6 @@ import React from 'react';
 import photoshoots from '../../Images/aboutPage/photoshoot/brandon_shoot.jpg';
 import graphicdesign from '../../Images/aboutPage/graphics/graphic02.png';
 import drawing from '../../Images/aboutPage/drawings/lucy_ill.jpeg';
-import { SocialIcon } from 'react-social-icons';
 
 import './About.scss';
 const About = () => (
@@ -27,7 +26,7 @@ const About = () => (
 
             <div className="row about-content">
                 <div className="col-md-6" id="first">
-                    <img src={photoshoots} className="img-fluid rounded float-left about-img" alt="Responsive image" />
+                    <img src={photoshoots} className="img-fluid rounded float-left about-img" alt="photoshoots" />
                 </div>
                 <div className="col-md-6 mt-5 p-3" id="second">
 

@@ -5,16 +5,24 @@ $font-size-base: 0.9rem !default;
 $font-family-sans-serif:  "Poppins", Helvetica, Arial, sans-serif !default;
 $bg-secondary: #F9F8FD;
 $bg-primary: #8d18b4;
+$dark-black: #31374D;
 $white-color: #FFFF;
 
+body {
+    font-family: "Poppins";
+}
 .navbar{
 font-size: 20px;
 }
 
-.main-page {
-    background-color: $bg-secondary;
+.main-img {
+    height: fit-content;
+    margin-top: -165px;
 }
 
+.dark-black {
+    color: $dark-black;
+}
 .emphasized-text {
     font-size: 4rem;
     line-height: 0.9;
@@ -23,7 +31,6 @@ font-size: 20px;
 .booking-btn {
     background-color: $bg-primary;
     color:$white-color;
-    width: 10%;
     font-weight: bold;
     &:hover {
         color: $white-color
@@ -39,6 +46,17 @@ font-size: 20px;
     color: #8d18b4;
 }
 
+.bg-primary {
+    background-color: $bg-primary!important;
+}
+#modal-textarea {
+    height: 150px;
+}
+.btn-secondary {
+    color: #000;
+    background-color: #FFFF;
+}
+
 .painter-img {
     margin-left: -250px;
 
@@ -50,9 +68,14 @@ font-size: 20px;
 @media only screen and (max-width:768px) {
     .elevator-pitch { text-align: center;}
     .emphasized-text { font-size: 2rem;}
+    .main-img { width: 100%;}
     
 }
-
+@media screen and (max-width: 450px) and (min-width: 450px){
+    .emphasized-text {
+        font-size: 25px;
+    }
+}
 @media only screen and (max-width:1024px) {
-    .booking-btn { width: auto;}
+    .booking-btn { width: auto; float: none!important}
 }
