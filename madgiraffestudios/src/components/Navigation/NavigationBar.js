@@ -16,7 +16,7 @@ const NavigationBar = () => (
                 <Nav.Item><Nav.Link href="/" activeClassName="selected"  className="ml-4 mr-4">Home</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link activeClassName="selected" href="#about" className="ml-4 mr-4">About</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link activeClassName="selected" href="#gallery" className="ml-4 mr-4">Gallery</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link activeClassName="selected" href="/contact" className="ml-4 mr-4">Contact</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link activeClassName="selected" href="#footer" className="ml-4 mr-4">Contact</Nav.Link></Nav.Item>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
