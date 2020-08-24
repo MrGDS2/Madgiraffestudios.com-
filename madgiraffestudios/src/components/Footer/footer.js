@@ -22,14 +22,22 @@ class Footer extends Component{
                                 <p><SocialIcon url="https://twitter.com/MadGiraffeStud1" bgColor="#8d18b4" />
                                 </p>
                             </div>
+                            
                             <div className="col-md-3">
                                 <p>
                                     <SocialIcon url="https://www.linkedin.com/in/mackenzie-heslin-scott-70ab4a116/" bgColor="#8d18b4" />
                                 </p>
                             </div>
+                            
+                        </div>
+                        <div className="row">
+                            <div className="col-md-9 mt-4">
+                            <span className="text-center"><p className="copyright text-muted">©2020 by MrGDS2</p></span>
+
+                            </div>
                         </div>
                     </div>
-                    <div className="col-md-4 bg-light"><h6 className="font-weight-bolder line-height">CONTACT INFORMATION</h6><p>Madgiraffestudios@gmail.com</p>
+                    <div className="col-md-4"><h6 className="font-weight-bolder line-height">CONTACT INFORMATION</h6><p>Madgiraffestudios@gmail.com</p>
                     </div>
                 </div>
             </div>

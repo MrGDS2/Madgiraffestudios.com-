@@ -60,7 +60,7 @@ font-size: 20px;
 .painter-img {
     margin-left: -250px;
 
-    @media only screen and (max-width:1024px){
+    @media only screen and (max-width:1198px){
         display: none;
     }
 }
@@ -68,8 +68,9 @@ font-size: 20px;
 @media only screen and (max-width:768px) {
     .elevator-pitch { text-align: center;}
     .emphasized-text { font-size: 2rem;}
-    .main-img { width: 100%;}
+    .main-img { display: none;}
     
+
 }
 @media screen and (max-width: 450px) and (min-width: 450px){
     .emphasized-text {

@@ -19,8 +19,8 @@ return (
                 <Nav className="ml-auto mx-auto nav nav-pills nav-justified" >
                     <Nav.Item><Nav.Link href="/" activeClassName="selected"  className="ml-4 mr-4">Home</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link activeClassName="selected" href="#about" className="ml-4 mr-4">About</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link activeClassName="selected" href="work" className="ml-4 mr-4">Work</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link activeClassName="selected" href="/contact" className="ml-4 mr-4">Contact</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link activeClassName="selected" href="#gallery" className="ml-4 mr-4">Gallery</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link activeClassName="selected" href="#footer" className="ml-4 mr-4">Contact</Nav.Link></Nav.Item>
                 </Nav>
                 <Nav className="ml-auto mx-auto nav nav-pills nav-justified" >
                     <Nav.Item><button type="button" className="btn rounded shadow-lg booking-btn p-3 float-right" onClick={() => setDisplayModal(true)}>Book Me</button></Nav.Item>

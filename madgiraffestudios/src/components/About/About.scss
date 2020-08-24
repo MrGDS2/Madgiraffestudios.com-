@@ -1,16 +1,15 @@
-#headDiv {
-    background-color: grayscale($color: #f8f9fa);
-}
+
 
 .description-text { width: 75%; }
 
 @media only screen and (max-width:768px) {
-    .studio-name { text-align: center;}
+    .studio-text { font-size: 20px; text-align: center; width: auto; }
+   .studio-name{text-align: center; font-size: 30px;  }
     
    .description-text { font-size: 30px; text-align: center; width: auto; }
    .description-title{text-align: center;}
-   .studio-text {text-align: center;  font-size: 30px;}
-   .img-fluid{ 
+
+   .about-img{ 
     box-shadow: 5px 10px 18px #888888;
     margin-bottom: 60px;
     }
@@ -28,4 +27,8 @@
 
     box-shadow: 5px 10px 18px #888888;
  
+ }
+
+ .bottom-img{
+     margin-bottom: 100px;
  }

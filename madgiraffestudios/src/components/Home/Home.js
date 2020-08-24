@@ -2,6 +2,7 @@ import React from 'react';
 import Painter from '../../Images/main-img.png'
 import Spark from '../../Images/spark.png'
 import About from '../About/About';
+import Gallery from '../Gallery/Gallery';
 
 const Home = () => {
     return (
@@ -23,7 +24,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <About />
+            <About/>
+            <Gallery/>
         </React.Fragment>
     );
 
