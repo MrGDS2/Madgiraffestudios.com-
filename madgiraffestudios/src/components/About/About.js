@@ -13,10 +13,9 @@ const About = () => (
                             <h1 className="font-weight-bold p-3 secondary-color studio-name">
                              Mad Giraffe STuDios
                             </h1>  
-                    <p className="font-weight-900 mb-5 studio-text">
-                    There’s no better way to start a conversation than with art. It allows tough conversations to be had, thus allowing us to grow . Art inspires me to make social change and inspire others to follow suit.
-                   </p>
-                   
+                            <strong> <h2 className=" mb-5 studio-text">
+                    There’s no better way to start a conversation than with art. It allows tough conversations to be had, thus allowing us to grow . Art inspires us to make social change and inspire others to follow suit.
+                   </h2> </strong>
                 </div>
             </div>
          
@@ -31,7 +30,7 @@ const About = () => (
                 <div className="col-md-6 mt-5 p-3" id="second">
 
                     <h5 className="font-weight-bold secondary-color description-title" id="photoshoots">Photo Shoots</h5><p className=" text-muted description-text">
-                        At Mad Giraffe Studios, I am dedicated to capturing the moments as imagined, by you! The photo shoot is yours, this is your art. Look your best in a variety of shoots including, product, event and street photography, portraits, and more.</p>
+                        At Mad Giraffe Studios, we are dedicated to capturing the moments as imagined, by you! The photo shoot is yours, this is your art. Look your best in a variety of shoots including, product, event and street photography, portraits, and more.</p>
                 </div>
                
                 <div className="row">
