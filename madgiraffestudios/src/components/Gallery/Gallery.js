@@ -95,11 +95,11 @@ const Gallery = (props) => {
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms.png?alt=media&token=160f6581-2a4a-4565-b189-c1b0f220c91d',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms_small.png?alt=media&token=749cd609-488f-467e-83a0-56e96983140f',
       
       thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms.png?alt=media&token=160f6581-2a4a-4565-b189-c1b0f220c91d',
       startIndex: 11,
-      description: '"Bear Arms"'
+      description: 'The right of the people to keep and "Bear Arms"'
       
     },
 
@@ -110,8 +110,8 @@ const Gallery = (props) => {
 
   const galleryImages = gallery.map((img) => 
     <div className="col-md-4 mb-4 image-container img-wrap img-gallery" key={img.startIndex} onClick={() =>imageClick(img.startIndex)}>
-      <img src={img.original} alt={img.description} width="310px" height="380px" className="img-fluid rounded" />
-    <div className="img-description text-center">
+      <img src={img.original} alt={img.description} className="img-fluid rounded" />
+    <div className="img-description text-center img-fluid mx-auto">
       <span >{img.description}</span>
     </div>
   </div>

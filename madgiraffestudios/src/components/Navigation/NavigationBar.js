@@ -16,7 +16,7 @@ return (
             <Navbar.Brand href="/home"><img src={giraffeicon} height="50px" width="50px" alt="nav-icon"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto mx-auto nav nav-pills nav-justified" >
+                <Nav className="ml-auto mx-auto nav " >
                     <Nav.Item><Nav.Link href="/" activeClassName="selected"  className="ml-4 mr-4">Home</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link activeClassName="selected" href="#about" className="ml-4 mr-4">About</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link activeClassName="selected" href="#gallery" className="ml-4 mr-4">Gallery</Nav.Link></Nav.Item>
