@@ -10,42 +10,42 @@ const Gallery = (props) => {
 
   const gallery = [
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai%26jesse.jpg?alt=media&token=81657299-321c-47bd-b6b0-1bdafe6c43b2' ,
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai%26jesse.jpg?alt=media&token=81657299-321c-47bd-b6b0-1bdafe6c43b2',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai%26jesse_sm_redo.png?alt=media&token=494c97c3-e79a-41c0-8b02-a267a6607bf3' ,
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai%26jesse_sm_redo.png?alt=media&token=494c97c3-e79a-41c0-8b02-a267a6607bf3b',
       startIndex: 0,
       description: 'We have to remember to be there for each other in these tough times'
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai.jpg?alt=media&token=ac46f638-3b08-4056-a536-a8a33d2db389',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai.jpg?alt=media&token=ac46f638-3b08-4056-a536-a8a33d2db389',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai_small.png?alt=media&token=6ddfa01a-f8a1-470e-a9cc-a2c86f7afead',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai_small.png?alt=media&token=6ddfa01a-f8a1-470e-a9cc-a2c86f7afead',
       startIndex: 1,
       description: 'We are survivors, healers, lovers, a soul, a friend'
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fjesse.jpg?alt=media&token=a154b753-983e-486b-bb39-08ccc25d4b9a',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fjesse.jpg?alt=media&token=a154b753-983e-486b-bb39-08ccc25d4b9a',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fjesse_small.png?alt=media&token=439bac61-d1a2-4992-a1d2-ca930bf48714',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fjesse_small.png?alt=media&token=439bac61-d1a2-4992-a1d2-ca930bf48714',
       startIndex: 2,
       description: 'The way the world is now and black culture is everywhere, it’s really nice to always be in the conversation'
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fcouple2.jpg?alt=media&token=957b0d8f-60dd-4243-89ed-2e31113383d6',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fcouple2.jpg?alt=media&token=957b0d8f-60dd-4243-89ed-2e31113383d6',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fcouple_small.png?alt=media&token=27dd3f0c-77d0-4a78-87dd-ea14e1c97d65',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fcouple_small.png?alt=media&token=27dd3f0c-77d0-4a78-87dd-ea14e1c97d65',
       startIndex: 3,
       description: 'It’s just accepting them for their whole self, their perfections and imperfections'
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fdaniel.jpg?alt=media&token=4d7ceb81-786c-4219-a9ca-081ebd2a4902',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fdaniel.jpg?alt=media&token=4d7ceb81-786c-4219-a9ca-081ebd2a4902',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fdaniel_small.png?alt=media&token=b5dbe02a-af99-4e23-8453-d1265c42c292',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fdaniel_small.png?alt=media&token=b5dbe02a-af99-4e23-8453-d1265c42c292',
       startIndex: 4,
       description: 'My Blackness motivates me to rise above that societal illness'
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fgeorge_yurt.jpg?alt=media&token=77a536e8-4b2f-4d48-8ade-6148072b7a68',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fgeorge_yurt.jpg?alt=media&token=77a536e8-4b2f-4d48-8ade-6148072b7a68',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fgeorge_yurt_small.png?alt=media&token=4d1f748c-02ca-4aa4-b4ab-279be9e9f63b',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fgeorge_yurt_small.png?alt=media&token=4d1f748c-02ca-4aa4-b4ab-279be9e9f63b',
       startIndex: 5,
       description: 'We have a will to carry on...to be better and do more because you’re born with a handicap'
       
@@ -77,16 +77,16 @@ const Gallery = (props) => {
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fwoman_gif.gif?alt=media&token=dcdb081a-e5c2-4e2c-94ea-28cec048186d',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fwoman_gif.gif?alt=media&token=ecf63d90-5801-4228-9b0e-2618d4b5ce39',
       
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fwoman_gif.gif?alt=media&token=dcdb081a-e5c2-4e2c-94ea-28cec048186d',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fwoman_gif.gif?alt=media&token=ecf63d90-5801-4228-9b0e-2618d4b5ce39',
       startIndex: 9,
       description: 'Kalpana Chawla was an American astronaut, engineer, and the first woman of Indian origin to go to space.'
       
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2FBLM_gifs.gif?alt=media&token=b22c937a-d9d6-4b19-b1ea-4985b9c869df',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2FBLM_gifs_small.gif?alt=media&token=18fed372-f667-421b-bb46-7c60de5790f2',
       
       thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fdrawing01.jpg?alt=media&token=1b472979-1d6d-4e43-9471-771afbd01443',
       startIndex: 10,
@@ -95,11 +95,11 @@ const Gallery = (props) => {
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms.png?alt=media&token=160f6581-2a4a-4565-b189-c1b0f220c91d',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms_small.png?alt=media&token=749cd609-488f-467e-83a0-56e96983140f',
       
       thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms.png?alt=media&token=160f6581-2a4a-4565-b189-c1b0f220c91d',
       startIndex: 11,
-      description: '"Bear Arms"'
+      description: 'The right of the people to keep and "Bear Arms"'
       
     },
 
@@ -109,9 +109,9 @@ const Gallery = (props) => {
   ];
 
   const galleryImages = gallery.map((img) => 
-    <div className="col-md-4 mb-4 image-container img-wrap" key={img.startIndex} onClick={() =>imageClick(img.startIndex)}>
-      <img src={img.original} alt={img.description} width="310px" height="380px" className="rounded" />
-    <div className="after text-center">
+    <div className="col-md-4 mb-4 image-container img-wrap img-gallery" key={img.startIndex} onClick={() =>imageClick(img.startIndex)}>
+      <img src={img.original} alt={img.description} className="img-fluid rounded" />
+    <div className="img-description text-center img-fluid mx-auto">
       <span >{img.description}</span>
     </div>
   </div>
@@ -130,8 +130,8 @@ const Gallery = (props) => {
     <React.Fragment>
       <div className="" id="topParent">
         <div className="container mt-5" id="gallery">
-          <div className="text-center  mx-auto w-50">
-            <h1 className=" font-weight-bold p-3 mb-5 secondary-color">
+          <div className="text-center  mx-auto w-50 ">
+            <h1 className=" font-weight-bold p-3 mb-5 secondary-color gallery-header">
               Gallery</h1>
           </div>
           <div className="row gallery-row" >
