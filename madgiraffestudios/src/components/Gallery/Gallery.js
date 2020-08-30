@@ -8,6 +8,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const Gallery = (props) => {
 
+ 
   const gallery = [
     {
       original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai%26jesse_sm_redo.png?alt=media&token=494c97c3-e79a-41c0-8b02-a267a6607bf3' ,
@@ -60,19 +61,19 @@ const Gallery = (props) => {
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fgraphic04.jpg?alt=media&token=35720591-4ddf-4300-9177-00d4e1b8a726',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FLabel-Brand-Mockup-vol7.png?alt=media&token=76ad14d4-c4b8-4e86-bf1e-496d47ecd4fa',
       
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fgraphic04.jpg?alt=media&token=35720591-4ddf-4300-9177-00d4e1b8a726',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FLabel-Brand-Mockup-vol7.png?alt=media&token=76ad14d4-c4b8-4e86-bf1e-496d47ecd4fa',
       startIndex: 7,
-      description: 'Open mind but mindful Black Lives Matter'
+      description: 'Save the Bees, They make our Honey!'
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fsketch.jpg?alt=media&token=42518e19-ccd9-4caa-98c9-0809470f3d59',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FUntitled-1.png?alt=media&token=06283aed-af99-437a-ab8b-3151b28bb693',
       
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fsketch.jpg?alt=media&token=42518e19-ccd9-4caa-98c9-0809470f3d59',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FUntitled-1.png?alt=media&token=06283aed-af99-437a-ab8b-3151b28bb693',
       startIndex: 8,
-      description: 'Flex ya sketch muscle and doodle!'
+      description: 'Gaming icon for streamer on Twitch: Mrgds2'
       
     },
 
