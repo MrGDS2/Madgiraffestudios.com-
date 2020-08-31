@@ -52,13 +52,14 @@ const Gallery = (props) => {
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Ftara-logo.png?alt=media&token=12119106-11c4-444e-9b98-8b77f127b812',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Ftara-logo_small.png?alt=media&token=c32c6ab5-b3d2-4039-98ea-7d3cddbc9cfb',
       
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Ftara-logo.png?alt=media&token=12119106-11c4-444e-9b98-8b77f127b812',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Ftara-logo_small.png?alt=media&token=c32c6ab5-b3d2-4039-98ea-7d3cddbc9cfb',
       startIndex: 6,
       description: 'Logo for Necessary Economic Trust'
       
     },
+	
 
     {
       original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FLabel-Brand-Mockup-vol7.png?alt=media&token=76ad14d4-c4b8-4e86-bf1e-496d47ecd4fa',
@@ -132,7 +133,7 @@ const Gallery = (props) => {
       <div id="gallery">
         <div className="container mt-5" id="gallery">
           <div className="text-center  mx-auto w-50 ">
-            <h1 className=" font-weight-bold p-3 mb-5 secondary-color gallery-header">
+            <h1 className="font-weight-bold p-3 secondary-color">
               Gallery</h1>
           </div>
           <div className="row gallery-row" >
