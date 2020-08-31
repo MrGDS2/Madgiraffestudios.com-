@@ -129,7 +129,7 @@ const Gallery = (props) => {
   }
   return (
     <React.Fragment>
-      <div className="" id="topParent">
+      <div id="gallery">
         <div className="container mt-5" id="gallery">
           <div className="text-center  mx-auto w-50 ">
             <h1 className=" font-weight-bold p-3 mb-5 secondary-color gallery-header">

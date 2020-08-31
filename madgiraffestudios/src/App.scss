@@ -39,6 +39,7 @@ body {
     background-color: $bg-primary;
     color:$white-color;
     font-weight: bold;
+    border-radius: 15px;
     &:hover {
         color: $white-color
     }
@@ -76,7 +77,8 @@ body {
     .elevator-pitch { text-align: center;}
     .emphasized-text { font-size: 2rem;}
     .main-img { display: none;}
-    
+    .navbar-nav{ display: table;}
+ 
 
 }
 @media screen and (max-width: 450px) and (min-width: 450px){
