@@ -6,9 +6,8 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
 
-const Gallery = (props) => {
+const Gallery = () => {
 
- 
   const gallery = [
     {
       original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fnai%26jesse_sm_redo.png?alt=media&token=494c97c3-e79a-41c0-8b02-a267a6607bf3' ,

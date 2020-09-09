@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Footer from './components/Footer/footer';
 import Gallery from './components/Gallery/Gallery';
+
 const routing = (
     <Router>
         <NavigationBar/>
@@ -23,7 +24,6 @@ const routing = (
 
 
 ReactDOM.render(routing, document.getElementById('root'));
-
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
