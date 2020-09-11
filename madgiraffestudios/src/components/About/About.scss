@@ -13,8 +13,10 @@
  #aboutParent {
     padding-bottom: 100px;
  }
+ #graphic-design{margin-top: 53px;}
+ #illustrations,#photoshoots{ margin-top: 250px;}
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:991px) {
     .studio-text  { font-size: 20px; width: auto; }
     .studio-name  { text-align: center; font-size: 30px;  }
     
@@ -29,12 +31,13 @@
         font-size: 2rem;
     }
 
+    #second {
+        order: 2!important;
+    }
     #first {
         order: 1!important;
         margin: 0 25px;
      }
-
-     #second {
-         order: 2!important;
-     }
+    #graphic-design,#illustrations,#photoshoots{margin-top: 0;}
+    
 }
