@@ -19,7 +19,8 @@
     "react-scroll": "^1.8.0",
     "react-social-icons": "^4.1.0",
     "reactstrap": "^8.5.1",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "sweetalert": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

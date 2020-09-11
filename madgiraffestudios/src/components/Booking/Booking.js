@@ -2,13 +2,12 @@ import React, { Component,useState,useRef,useImperativeHandle,forwardRef} from '
 import * as emailjs from 'emailjs-com';
 import {Button,Modal,ModalHeader,ModalBody,ModalFooter} from 'reactstrap';
 import {FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+import swal from 'sweetalert';
+import './Booking.scss'
 
 const Booking= forwardRef((props,ref) => {
-
+    
     const [displayModal, setDisplayModal] = useState(false);
-  
-      
-  
     const showModal = () => {
        setDisplayModal(true);
     };
@@ -55,12 +54,23 @@ const [message, setMessage] = useState ('');
        templateParams,
        process.env.USER_ID_EMAILJS
      ).then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
+      swal({
+        title: "Message on the way!",
+        text: "We can't wait to work with you, " + fullName + "!",
+        icon: "success",
+        dangerMode: false,
+      })
+ 
+
    }, function(error) {
-      console.log('FAILED...', error);
-   });
-
-
+    swal({
+        title: "Oops!",
+        text: "Message not sent please email us directly: Madgiraffestudios@gmail.com",
+        icon: "error",
+        dangerMode: true,
+      })
+    
+  });
 
    clearForm();
 
