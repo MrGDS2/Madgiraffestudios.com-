@@ -6,17 +6,12 @@ import swal from 'sweetalert';
 import './Booking.scss'
 
 const Booking= forwardRef((props,ref) => {
-    
+
     const [displayModal, setDisplayModal] = useState(false);
     const showModal = () => {
        setDisplayModal(true);
     };
   
-    const hideModal = () => {
-        setDisplayModal(false);
-        };
-      
-
     useImperativeHandle(ref, () => {
       return {
         showModal: showModal
@@ -24,7 +19,7 @@ const Booking= forwardRef((props,ref) => {
       };
     });
   
- 
+
 const [fullName, setFullName] = useState('');
 const [email, setEmail] = useState ('');
 const [phone, setPhone] = useState ('');
@@ -36,7 +31,7 @@ const [message, setMessage] = useState ('');
 
  const handleSubmit = (evt) => {
     evt.preventDefault();
-    hideModal();
+    setDisplayModal(false);
 
     let templateParams = {
       name: fullName,
@@ -49,25 +44,25 @@ const [message, setMessage] = useState ('');
     
    
      emailjs.send(
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE,
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE,
        templateParams,
-       process.env.USER_ID_EMAILJS
+       process.env.REACT_APP_USER_ID_EMAILJS
      ).then(function(response) {
       swal({
         title: "Message on the way!",
-        text: "We can't wait to work with you, " + fullName + "!",
+        text: `We can't wait to work with you, ${fullName}!`,
         icon: "success",
-        dangerMode: false,
+        dangerMode: false
       })
  
 
    }, function(error) {
-    swal({
+     swal({
         title: "Oops!",
-        text: "Message not sent please email us directly: Madgiraffestudios@gmail.com",
+        text: `Message not sent please email us directly: ${templateParams.to_name}`,
         icon: "error",
-        dangerMode: true,
+        dangerMode: true
       })
     
   });
@@ -86,7 +81,7 @@ const [message, setMessage] = useState ('');
  }
 
       return (
-        <Modal isOpen={displayModal} toggle={() =>hideModal()}   className="mt-5 text-center">
+        <Modal isOpen={displayModal} toggle={() =>setDisplayModal(false)}   className="mt-5 text-center">
         <ModalHeader className="bg-primary text-white">Let's Work Together!</ModalHeader>
          <ModalBody className="font-weight-bold">
          <Form onSubmit={handleSubmit} >
@@ -118,8 +113,6 @@ const [message, setMessage] = useState ('');
                      <Input type="textarea"  name="message" value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us more of what you want" id="modal-textarea"/>
                  </FormGroup> 
                  <Button type="submit">Submit</Button> 
-                 {/* TODO:TypeError: Cannot read property 'hideModal' of null */}
-              
              </Form>
          </ModalBody>
          <ModalFooter>
