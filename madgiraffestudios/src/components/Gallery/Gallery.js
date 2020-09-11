@@ -51,11 +51,11 @@ const Gallery = () => {
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Ftara-logo_small.png?alt=media&token=c32c6ab5-b3d2-4039-98ea-7d3cddbc9cfb',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FCan-mock-up1_small.png?alt=media&token=c84a02a0-33a9-411f-be57-f9f01e851b1e',
       
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Ftara-logo_small.png?alt=media&token=c32c6ab5-b3d2-4039-98ea-7d3cddbc9cfb',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FCan-mock-up1_small.png?alt=media&token=c84a02a0-33a9-411f-be57-f9f01e851b1e',
       startIndex: 6,
-      description: 'Logo for Necessary Economic Trust'
+      description: `Mock up for LemonAid brand 'Lemon+AID'`
       
     },
 	

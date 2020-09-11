@@ -30,12 +30,7 @@ class Footer extends Component{
                             </div>
                             
                         </div>
-                        <div className="row">
-                            <div className="col-md-9 mt-4">
-                            <span className="text-center"><p className="copyright text-muted">©2020 by <a href="https://github.com/MrGDS2">MrGDS2</a></p></span>
-
-                            </div>
-                        </div>
+                       
                     </div>
                     <div className="col-md-4"><h6 className="font-weight-bolder line-height">CONTACT INFORMATION</h6><p>Madgiraffestudios@gmail.com</p>
                     </div>
@@ -43,7 +38,7 @@ class Footer extends Component{
                     </div>
                     <div className="row">
                             <div className="col-md-11 mt-4">
-                            <span className="text-center"><p className="copyright text-muted">©2020 by MrGDS2</p></span>
+                            <span className="text-center"><p className="copyright text-muted">©2020 by <a href="https://github.com/MrGDS2">MrGDS2</a></p></span>
 
                             </div>
                 </div>
