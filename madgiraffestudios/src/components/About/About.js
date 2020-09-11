@@ -45,6 +45,10 @@ const About = () => (
                     <div className="col-lg-6" id="first">
                         <img src={graphicdesign} alt="performance" className="img-fluid rounded float-right about-img" />
                     </div>
+                    <div className="col-lg-6 mt-5 p-3" id="second">
+                        <h5 className="font-weight-bold secondary-color description-title" id="graphic-design">Graphic Design</h5><p className="text-muted description-text">Your improvement as a business is my priority. What a business displays is extremely important to how they’re portrayed. Using custom logos, and having a strong social media presence graphically will truly boost a company's brand and popularity.</p>
+                    </div>
+                  
                 </div>
 
 
