@@ -13,6 +13,7 @@ body {
 }
 .navbar{
     font-size: 20px;
+    
 }
 .nav-item .active{
     border-bottom-left-radius: 10px;
@@ -20,7 +21,9 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-
+.nav-top{
+    background-color: white;
+}
 
 .main-img {
     height: fit-content;

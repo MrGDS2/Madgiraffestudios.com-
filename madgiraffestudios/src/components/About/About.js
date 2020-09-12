@@ -7,6 +7,7 @@ import './About.scss';
 const About = () => (
 
     <React.Fragment>
+        <div id="nav-start">%</div>
         <div className="bg-light" id="aboutParent">
             <div className="container pb-2" id="about">
                     <div className="text-center pt-5 mx-auto">
