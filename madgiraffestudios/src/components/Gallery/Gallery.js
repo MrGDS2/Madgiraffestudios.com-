@@ -141,13 +141,12 @@ const Gallery = () => {
         </div>
       </div>
 
-<Modal isOpen={modal} toggle={() => setModal(false)}>
+    <Modal isOpen={modal} toggle={() => setModal(false)}>
         <ModalHeader>Gallery</ModalHeader>
         <ModalBody>
-        <ImageGallery items={gallery}  thumbnailPosition= 'right' showBullets="true" startIndex={imageIndex} />
+        <ImageGallery items={gallery}  thumbnailPosition= 'right' startIndex={imageIndex} />
         </ModalBody>
         <ModalFooter>
-          
           <Button color="secondary" onClick={() => setModal(false)}>Close</Button>
         </ModalFooter>
       </Modal>
