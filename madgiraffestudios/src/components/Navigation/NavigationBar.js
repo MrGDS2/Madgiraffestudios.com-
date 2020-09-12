@@ -24,7 +24,7 @@ return (
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto mx-auto nav " >
                     <Nav.Item><Nav.Link href="/" activeclassname="selected"  className="ml-4 mr-4">Home</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link activeclassname="selected" href="#about" className="ml-4 mr-4">About</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link activeclassname="selected" href="#nav-start" className="ml-4 mr-4">About</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link activeclassname="selected" href="#galleryParent" className="ml-4 mr-4">Gallery</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link activeclassname="selected" href="#footer" className="ml-4 mr-4">Contact</Nav.Link></Nav.Item>
                 </Nav>
