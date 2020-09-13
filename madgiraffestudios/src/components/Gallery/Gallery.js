@@ -44,18 +44,18 @@ const Gallery = () => {
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fgeorge_yurt_small.png?alt=media&token=4d1f748c-02ca-4aa4-b4ab-279be9e9f63b',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fgeorge_yurt_small.png?alt=media&token=4d1f748c-02ca-4aa4-b4ab-279be9e9f63b',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fsmall%2FIMG_7902_small.png?alt=media&token=8d16fc90-1ab5-4e3b-a0a2-8852edf76c74',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2Fsmall%2FIMG_7902_small.png?alt=media&token=8d16fc90-1ab5-4e3b-a0a2-8852edf76c74',
       startIndex: 5,
       description: 'We have a will to carry on...to be better and do more because you’re born with a handicap'
       
     },
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FCan-mock-up1_small.png?alt=media&token=c84a02a0-33a9-411f-be57-f9f01e851b1e',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fembosed-logo-mockup.jpg?alt=media&token=4c505361-c786-42ce-bd97-b7e8d9fb89f6',
       
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FCan-mock-up1_small.png?alt=media&token=c84a02a0-33a9-411f-be57-f9f01e851b1e',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fembosed-logo-mockup.jpg?alt=media&token=4c505361-c786-42ce-bd97-b7e8d9fb89f6',
       startIndex: 6,
-      description: `Mock up for LemonAid brand 'Lemon+AID'`
+      description: `Custom  company logo on cardstock`
       
     },
 	
@@ -78,7 +78,7 @@ const Gallery = () => {
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fwoman_gif.gif?alt=media&token=ecf63d90-5801-4228-9b0e-2618d4b5ce39',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fsmall%2Fwoman_gif_sm.gif?alt=media&token=81e7e2b6-e54b-475b-ba9f-1329bad560ce',
       
       thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fwoman_gif.gif?alt=media&token=ecf63d90-5801-4228-9b0e-2618d4b5ce39',
       startIndex: 9,
@@ -87,7 +87,7 @@ const Gallery = () => {
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2FBLM_gifs_small.gif?alt=media&token=18fed372-f667-421b-bb46-7c60de5790f2',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fsmall%2FBLM_gifs_sm_fst.gif?alt=media&token=7485d541-cd03-4f15-a927-5215507fe39e',
       
       thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fdrawing01.jpg?alt=media&token=1b472979-1d6d-4e43-9471-771afbd01443',
       startIndex: 10,
@@ -96,9 +96,9 @@ const Gallery = () => {
     },
 
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms_small.png?alt=media&token=749cd609-488f-467e-83a0-56e96983140f',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fsmall%2Fbears_arms.png?alt=media&token=e56f12eb-a329-4bee-9f09-af14b759f7d8',
       
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2Fbears_arms.png?alt=media&token=160f6581-2a4a-4565-b189-c1b0f220c91d',
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FIllustrations%2Fsmall%2Fbears_arms.png?alt=media&token=e56f12eb-a329-4bee-9f09-af14b759f7d8',
       startIndex: 11,
       description: 'The right of the people to keep and "Bear Arms"'
       
