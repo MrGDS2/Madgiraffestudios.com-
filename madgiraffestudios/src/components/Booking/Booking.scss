@@ -28,3 +28,7 @@
 .swal-button--confirm:hover{
     background-color:  #9381FF !important;
 }
+
+.form-group.required .control-label:after {
+    content:"*";color:red;
+  }

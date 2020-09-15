@@ -27,7 +27,7 @@ const [subject, setSubject] = useState ('');
 const [message, setMessage] = useState ('');
 
 
-
+const isEnabled= email.length>0;
 
  const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -37,7 +37,7 @@ const [message, setMessage] = useState ('');
       name: fullName,
       phone: phone, 
       from_name: email,
-      to_name: 'Madgiraffestudios@gmail.com',
+      to_name: 'MadGiraffeSTuDios',
       subject: subject,
       message: message,
      }
@@ -53,7 +53,8 @@ const [message, setMessage] = useState ('');
         title: "Message on the way!",
         text: `We can't wait to work with you, ${fullName}!`,
         icon: "success",
-        dangerMode: false
+        timer: 3000
+       
       })
  
 
@@ -80,39 +81,42 @@ const [message, setMessage] = useState ('');
   setMessage('');
  }
 
+
+
       return (
         <Modal isOpen={displayModal} toggle={() =>setDisplayModal(false)}   className="mt-5 text-center">
         <ModalHeader className="bg-primary text-white">Let's Work Together!</ModalHeader>
          <ModalBody className="font-weight-bold">
          <Form onSubmit={handleSubmit} >
-                 <FormGroup>
-                     <Label for="receipient name" className="d-block text-left">Full Name</Label>
-                     <Input type="text" name="fullName" value={fullName} onChange={e=>setFullName(e.target.value)} placeholder="Your name" required/>
+                 <FormGroup className="form-group required">
+                     <Label for="receipient name" className="d-block text-left control-label">Full Name</Label>
+                     <Input type="text" name="fullName" value={fullName} onChange={e=>setFullName(e.target.value)} placeholder="Your name" title="Please put your name for us" required />
                      <FormFeedback>You will not be able to see this</FormFeedback>
                  </FormGroup>
-                 <FormGroup>
-                     <Label for="email" className="d-block text-left">Email</Label>
-                     <Input type="email" name="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="Email@gmail.com" />
+                 <FormGroup className="form-group required">
+                     <Label for="email" className="d-block text-left control-label">Email</Label>
+                     <Input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={email} onChange={e=>setEmail(e.target.value)} placeholder="Email@gmail.com" title="Please put in a valid email address" required />
                  </FormGroup>
-                 <FormGroup>
+                 <FormGroup >
                      <Label for="phone" className="d-block text-left">Phone</Label>
-                     <Input type="tel" name="phone" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="(917)-000-0000" />
+                     <Input type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="917-000-0000" title="Please put in phone number format 917-XXX-XXX"/>
                  </FormGroup>
-                 <FormGroup>
-                     <Label for="email" className="d-block text-left">What would you like?</Label>
-                     <Input type="select"  name="subject" value={subject} onChange={e=>setSubject(e.target.value)} >
-                         <option>Choose One</option>
+                 <FormGroup className="form-group required">
+                     <Label for="email" className="d-block text-left control-label">What would you like?</Label>
+                     <Input type="select"   name="subject" value={subject} onChange={e=>setSubject(e.target.value)} title="Please tell us what you would like done" required>
+                     <option></option>
+                     <option disabled > -- select an option -- </option>
                          <option>Photo Shoot</option>
                          <option>Graphic Design</option>
                          <option>Illustration</option>
                      </Input>
                  </FormGroup>
      
-                 <FormGroup>
-                     <Label for="message" className="d-block text-left">Description</Label>
-                     <Input type="textarea"  name="message" value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us more of what you want" id="modal-textarea"/>
+                 <FormGroup className="form-group required">
+                     <Label for="message" className="d-block text-left control-label">Description</Label>
+                     <Input type="textarea"  name="message" value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us more of what you want" id="modal-textarea" title="Please describe what you would like done" required/>
                  </FormGroup> 
-                 <Button type="submit">Submit</Button> 
+                 <Button type="submit" disabled={!isEnabled}>Submit</Button> 
              </Form>
          </ModalBody>
          <ModalFooter>
@@ -125,3 +129,4 @@ const [message, setMessage] = useState ('');
       
       
   export default Booking;  
+  
