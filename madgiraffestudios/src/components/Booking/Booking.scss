@@ -19,17 +19,7 @@
     box-sizing: border-box;
 }
 
-
-.swal-button{
-    background-color: #9370Db  ;
-  
+.form-group.required .control-label:after {
+    content:"*";
+    color:red;
 }
-
-.swal-button--confirm:hover{
-    background-color:  #9381FF !important;
-}
-
-.form-group.required 
-.control-label:after {
-    content:"*";color:red;
-  }
