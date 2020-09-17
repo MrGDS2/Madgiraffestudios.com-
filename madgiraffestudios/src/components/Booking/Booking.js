@@ -30,7 +30,7 @@ const [subject, setSubject] = useState ('');
 const [message, setMessage] = useState ('');
 
 
-const isEnabled=isVerified;
+const isEnabled=email.length>0 && isVerified;
 
  const verifyCallback= ()=>{
    setVerification(true);
@@ -66,7 +66,7 @@ const handleVerification=(templateParams)=>{
           title: "Message on the way!",
           text: `We can't wait to work with you, ${fullName}!`,
           icon: "success",
-          timer: 3000,
+          timer: 5000,
           buttons: { cancel: null }
          
         })
@@ -129,8 +129,8 @@ const handleVerification=(templateParams)=>{
                      <Label for="message" className="d-block text-left control-label">Description</Label>
                      <Input type="textarea"  name="message" value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us more of what you want" id="modal-textarea" title="Please describe what you would like done" required/>
                  </FormGroup> 
-                 <ReCAPTCHA className="mb-4 recaptcha"
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                 <ReCAPTCHA className="mb-4 d-flex justify-content-center"
+                  sitekey={process.env.REACT_APP_SITE_KEY}
                   onChange={verifyCallback}
                  />
                  <Button type="submit" disabled={!isEnabled}>Submit</Button> 

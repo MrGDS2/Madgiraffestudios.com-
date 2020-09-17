@@ -19,22 +19,7 @@
     box-sizing: border-box;
 }
 
-
-.swal-button{
-    background-color: #9370Db  ;
-  
-}
-
-.swal-button--confirm:hover{
-    background-color:  #9381FF !important;
-}
-
-.form-group.required 
-.control-label:after {
-    content:"*";color:red;
-}
-
-.recaptcha{
-   display: flex;
-   justify-content: center;
+.form-group.required .control-label:after {
+    content:"*";
+    color:red;
 }
