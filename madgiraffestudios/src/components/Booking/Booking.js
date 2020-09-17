@@ -37,7 +37,7 @@ const isEnabled= email.length>0;
       name: fullName,
       phone: phone, 
       from_name: email,
-      to_name: 'MadGiraffeSTuDios',
+      to_name: 'Madgiraffestudios@gmail.com',
       subject: subject,
       message: message,
      }
@@ -53,7 +53,8 @@ const isEnabled= email.length>0;
         title: "Message on the way!",
         text: `We can't wait to work with you, ${fullName}!`,
         icon: "success",
-        timer: 3000
+        timer: 3000,
+        buttons: { cancel: null }
        
       })
  
@@ -63,7 +64,8 @@ const isEnabled= email.length>0;
         title: "Oops!",
         text: `Message not sent please email us directly: ${templateParams.to_name}`,
         icon: "error",
-        dangerMode: true
+        timer: 5000,
+        buttons: { cancel: null }
       })
     
   });
@@ -99,7 +101,7 @@ const isEnabled= email.length>0;
                  </FormGroup>
                  <FormGroup >
                      <Label for="phone" className="d-block text-left">Phone</Label>
-                     <Input type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="917-000-0000" title="Please put in phone number format 917-XXX-XXX"/>
+                     <Input type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="123-456-7890" title="Please put in phone number format 123-456-7890"/>
                  </FormGroup>
                  <FormGroup className="form-group required">
                      <Label for="email" className="d-block text-left control-label">What would you like?</Label>
