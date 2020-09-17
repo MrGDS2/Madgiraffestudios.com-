@@ -13,14 +13,17 @@ body {
 }
 .navbar{
     font-size: 20px;
+    
 }
 .nav-item .active{
-    border-bottom-left-radius: 10px;
     border-bottom: 2px solid #B47EB3;
-    border-bottom-right-radius: 10px;
+   
 }
 
-
+.nav-top{
+    background-color: white;
+    opacity: 95%;
+}
 
 .main-img {
     height: fit-content;

@@ -17,7 +17,7 @@ const NavigationBar = () => {
 return (
     <React.Fragment>
 
-    <div className="pt-4 container" >
+    <div className="pt-4 container sticky-top nav-top" >
         <Navbar expand="lg">
             <Navbar.Brand href="/home"><img src={giraffeicon} height="50px" width="50px" alt="nav-icon"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,7 +26,7 @@ return (
                     <Nav.Item><Nav.Link href="/" activeclassname="selected"  className="ml-4 mr-4">Home</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link activeclassname="selected" href="#about" className="ml-4 mr-4">About</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link activeclassname="selected" href="#gallery" className="ml-4 mr-4">Gallery</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link activeclassname="selected" href="#footer" className="ml-4 mr-4">Contact</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link activeclassname="selected" href="#footer" className="ml-4 mr-4 mb-2">Contact</Nav.Link></Nav.Item>
                 </Nav>
                 <Nav className="ml-auto mx-auto nav nav-pills nav-justified" > 
                     <Nav.Item>
