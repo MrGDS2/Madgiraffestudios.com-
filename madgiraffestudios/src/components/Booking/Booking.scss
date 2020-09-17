@@ -32,4 +32,9 @@
 .form-group.required 
 .control-label:after {
     content:"*";color:red;
-  }
+}
+
+.recaptcha{
+   display: flex;
+   justify-content: center;
+}

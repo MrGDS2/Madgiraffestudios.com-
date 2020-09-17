@@ -3,11 +3,14 @@ import * as emailjs from 'emailjs-com';
 import {Button,Modal,ModalHeader,ModalBody,ModalFooter} from 'reactstrap';
 import {FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
 import swal from 'sweetalert';
+import ReCAPTCHA from "react-google-recaptcha";
 import './Booking.scss'
 
 const Booking= forwardRef((props,ref) => {
 
     const [displayModal, setDisplayModal] = useState(false);
+    const [isVerified,setVerification]= useState(false);
+
     const showModal = () => {
        setDisplayModal(true);
     };
@@ -27,8 +30,11 @@ const [subject, setSubject] = useState ('');
 const [message, setMessage] = useState ('');
 
 
-const isEnabled= email.length>0;
+const isEnabled=isVerified;
 
+ const verifyCallback= ()=>{
+   setVerification(true);
+ }
  const handleSubmit = (evt) => {
     evt.preventDefault();
     setDisplayModal(false);
@@ -42,38 +48,43 @@ const isEnabled= email.length>0;
       message: message,
      }
     
-   
-     emailjs.send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE,
-       templateParams,
-       process.env.REACT_APP_USER_ID_EMAILJS
-     ).then(function(response) {
-      swal({
-        title: "Message on the way!",
-        text: `We can't wait to work with you, ${fullName}!`,
-        icon: "success",
-        timer: 3000,
-        buttons: { cancel: null }
-       
-      })
- 
-
-   }, function(error) {
-     swal({
-        title: "Oops!",
-        text: `Message not sent please email us directly: ${templateParams.to_name}`,
-        icon: "error",
-        timer: 5000,
-        buttons: { cancel: null }
-      })
-    
-  });
-
-   clearForm();
+     handleVerification(templateParams);
 
 }
 
+
+const handleVerification=(templateParams)=>{
+     
+     if(isVerified){
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE,
+         templateParams,
+         process.env.REACT_APP_USER_ID_EMAILJS
+       ).then(function(response) {
+        swal({
+          title: "Message on the way!",
+          text: `We can't wait to work with you, ${fullName}!`,
+          icon: "success",
+          timer: 3000,
+          buttons: { cancel: null }
+         
+        })
+   
+  
+     }, function(error) {
+       swal({
+          title: "Oops!",
+          text: `Message not sent please email us directly: ${templateParams.to_name}`,
+          icon: "error",
+          timer: 5000,
+          buttons: { cancel: null }
+        })
+      
+    });
+      clearForm();
+     }   
+}
  const clearForm= ()=>{
 
   setFullName('');
@@ -118,7 +129,12 @@ const isEnabled= email.length>0;
                      <Label for="message" className="d-block text-left control-label">Description</Label>
                      <Input type="textarea"  name="message" value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us more of what you want" id="modal-textarea" title="Please describe what you would like done" required/>
                  </FormGroup> 
+                 <ReCAPTCHA className="mb-4 recaptcha"
+                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  onChange={verifyCallback}
+                 />
                  <Button type="submit" disabled={!isEnabled}>Submit</Button> 
+                
              </Form>
          </ModalBody>
          <ModalFooter>
