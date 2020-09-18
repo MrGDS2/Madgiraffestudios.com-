@@ -134,7 +134,6 @@ const handleVerification=(templateParams)=>{
                   onChange={verifyCallback}
                  />
                  <Button type="submit" disabled={!isEnabled}>Submit</Button> 
-                
              </Form>
          </ModalBody>
          <ModalFooter>
