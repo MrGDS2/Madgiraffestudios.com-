@@ -139,8 +139,7 @@ const handleVerification=(templateParams)=>{
          </ModalBody>
          <ModalFooter>
          </ModalFooter>
-     </Modal>
-             
+     </Modal>  
       )
       
 });
