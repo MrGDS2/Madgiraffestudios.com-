@@ -130,7 +130,7 @@ const handleVerification=(templateParams)=>{
                      <Input type="textarea"  name="message" value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us more of what you want" id="modal-textarea" title="Please describe what you would like done" required/>
                  </FormGroup> 
                  <ReCAPTCHA className="mb-4 d-flex justify-content-center"
-                  sitekey="6Le0ps0ZAAAAAPpSWjdw2OVhLHNxE2c9r0hVVaLN"
+                  sitekey={process.env.REACT_APP_SITE_KEY}
                   onChange={verifyCallback}
                  />
                  <Button type="submit" disabled={!isEnabled}>Submit</Button> 
