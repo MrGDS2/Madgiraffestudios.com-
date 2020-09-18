@@ -66,6 +66,10 @@
   }
  }
     @media only screen and (max-width:768px) {
+        .image-container:hover .img-description {
+            display: none;
+            
+        }
         .img-fluid{
              margin: auto;
              display: block;
@@ -79,7 +83,6 @@
             opacity: .8;
             font-size: 30px;
             border-radius: 1%;
-        
         }
         .img-gallery span {
             position: relative; 
