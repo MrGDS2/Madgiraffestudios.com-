@@ -23,3 +23,14 @@
     content:"*";
     color:red;
 }
+
+.modal-header{
+    background-color: #8d18b4;
+    display: block;
+    align-items: flex-start;
+    border-bottom: 0px !important;
+    padding: 1rem 1rem;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+    
+}
