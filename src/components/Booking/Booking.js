@@ -98,8 +98,7 @@ const handleVerification=(templateParams)=>{
 
       return (
         <Modal isOpen={displayModal} toggle={() =>setDisplayModal(false)}   className="mt-5 text-center">
-        
-       
+          
         <div className="modal-header">
          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" onClick={() =>setDisplayModal(false)}>&times;</span>
