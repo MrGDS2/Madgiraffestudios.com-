@@ -98,7 +98,14 @@ const handleVerification=(templateParams)=>{
 
       return (
         <Modal isOpen={displayModal} toggle={() =>setDisplayModal(false)}   className="mt-5 text-center">
-        <ModalHeader className="bg-primary text-white">Let's Work Together!</ModalHeader>
+
+        <div className="modal-head">
+         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" onClick={() =>setDisplayModal(false)} className="x-btn">&times;</span>
+         </button>
+        <ModalHeader className="bg-primary text-white">Let's Work Together!</ModalHeader> 
+      </div>
+
          <ModalBody className="font-weight-bold">
          <Form onSubmit={handleSubmit} >
                  <FormGroup className="form-group required">
