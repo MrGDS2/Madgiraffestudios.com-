@@ -19,7 +19,7 @@ return (
 
     <div className="pt-4 container sticky-top nav-top" >
         <Navbar expand="lg">
-            <Navbar.Brand href="/home"><img src={giraffeicon} height="50px" width="50px" alt="nav-icon"/></Navbar.Brand>
+            <Navbar.Brand href="/"><img src={giraffeicon} height="50px" width="50px" alt="nav-icon"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto mx-auto nav " >
