@@ -17,7 +17,7 @@ const NavigationBar = () => {
 return (
     <React.Fragment>
 
-    <div className="pt-4 container sticky-top nav-top" >
+    <div className="pt-4 container sticky-top nav-top">
         <Navbar expand="lg">
             <Navbar.Brand href="/"><img src={giraffeicon} height="50px" width="50px" alt="nav-icon"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
