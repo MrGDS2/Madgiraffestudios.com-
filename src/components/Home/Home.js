@@ -4,6 +4,7 @@ import Spark from '../../Images/spark.png'
 import About from '../About/About';
 import Gallery from '../Gallery/Gallery';
 
+
 const Home = () => {
     return (
         <React.Fragment>
