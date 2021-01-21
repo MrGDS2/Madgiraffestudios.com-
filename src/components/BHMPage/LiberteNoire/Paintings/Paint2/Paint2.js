@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import React, { useState } from 'react';
 import firebase from '../../../../../Firebase';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../../../LiberteNoire/Paintings/Paintings.scss';
@@ -23,34 +22,31 @@ const Paint2 = () => {
 
   return (
     <React.Fragment>
-      <Carousel showIndicators={false} showStatus={false}>
-        <div className="container ">
-          <div className="container pb-5" id="about">
-            <div className="text-center pt-5 mx-auto">
-              <h1 className="showTitle font-weight-bold p-3 secondary-color">
-                Liberté Noir Showcase
+      <div className="container ">
+        <div className="container pb-5" id="about">
+          <div className="text-center pt-5 mx-auto">
+            <h1 className="showTitle font-weight-bold p-3 secondary-color">
+              Liberté Noir Showcase
                             </h1>
-            </div>
           </div>
-          <div className="row mt-5 pb-5">
-            <div className="col-5">
-              <h1 className="align-me font-weight-bold p-3 secondary-color" id="first">
-                {name}
-              </h1>
-            </div>
-            <div className="col-4" >
-              <img src={image} className="pic" id="second" />
-            </div>
-            <div className="col-3">
-              <p className="show-text mb-5 studio-text" id="third">
-                {description}
-              </p>
-            </div>
-          </div>
-          <p className="legend">{price}</p>
         </div>
-
-      </Carousel>
+        <div className="row mt-5 pb-5">
+          <div className="col-5">
+            <h1 className="align-me font-weight-bold p-3 secondary-color" id="first">
+              {name}
+            </h1>
+          </div>
+          <div className="col-4" >
+            <img src={image} className="pic" id="second" alt="main-img" />
+          </div>
+          <div className="col-3">
+            <p className="show-text mb-5 studio-text" id="third">
+              {description}
+            </p>
+          </div>
+        </div>
+        <p className="legend">{price}</p>
+      </div>
     </React.Fragment>
   )
 

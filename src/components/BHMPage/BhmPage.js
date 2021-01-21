@@ -1,7 +1,6 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import testimg from '../../Images/aboutPage/photoshoot/brandon_shoot.jpg';
 import Paint1 from './LiberteNoire/Paintings/Paint1/Paint1';
 import Paint2 from './LiberteNoire/Paintings/Paint2/Paint2';
 import Paint3 from './LiberteNoire/Paintings/Paint3/Paint3';
@@ -13,26 +12,22 @@ import Paint8 from './LiberteNoire/Paintings/Paint8/Paint8';
 import Paint9 from './LiberteNoire/Paintings/Paint9/Paint9';
 import Paint10 from './LiberteNoire/Paintings/Paint10/Paint10';
 
-
 const BhmPage = () => {
-
 
 
     return (
         <React.Fragment>
 
 
-            <Carousel>
+            <Carousel showThumbs={false}>
                 <div>
                     {/*photo 1*/}
                     <Paint1 />
                 </div>
-
                 {/*photo 2 */}
                 <div>
                     <Paint2 />
                 </div>
-
                 {/* photo 3 */}
                 <div >
                     <Paint3 />
