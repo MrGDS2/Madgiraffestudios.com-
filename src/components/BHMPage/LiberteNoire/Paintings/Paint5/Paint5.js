@@ -32,7 +32,7 @@ const Paint5 = () => {
         </div>
         <div className="row mt-5 pb-5">
           <div className="col-5">
-            <h1 className="align-me font-weight-bold p-3 secondary-color" id="first">
+            <h1 className="align-me font-weight-bold p-3 secondary-color" id="noir-title">
               {name}
             </h1>
           </div>

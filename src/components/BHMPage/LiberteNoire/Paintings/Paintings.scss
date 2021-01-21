@@ -78,13 +78,19 @@ $Liberte: #A9A9A9;
         transition: opacity .35s ease-in-out;
     }
 
-    #second {
+    #noir-img {
         order: 2 !important;
         margin: 77px -167px;
         margin-right: auto;
 
     }
 
+    #noir-title {
+        order: 1 !important;
+        margin: -41px 24px;
+        transform: rotate(0deg);
+        font-size: 49px;
+    }
     #hair {
         order: 2 !important;
         margin: 105px -167px;
@@ -101,10 +107,5 @@ $Liberte: #A9A9A9;
         margin-right: auto;
     }
 
-    #first {
-        order: 1 !important;
-        margin: -41px 24px;
-        transform: rotate(0deg);
-        font-size: 49px;
-    }
+
 }
