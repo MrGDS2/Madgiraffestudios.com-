@@ -32,12 +32,12 @@ const Paint7 = () => {
         </div>
         <div className="row mt-5 pb-5">
           <div className="col-5">
-            <h1 className="align-me font-weight-bold p-3 secondary-color" id="first">
+            <h1 className="align-me font-weight-bold p-3 secondary-color" id="noir-title">
               {name}
             </h1>
           </div>
           <div className="col-4" >
-            <img src={image} className="pic" id="second" alt="main-img" />
+            <img src={image} className="pic" id="noir-img" alt="main-img" />
           </div>
           <div className="col-3">
             <p className="show-text mb-5 studio-text">
