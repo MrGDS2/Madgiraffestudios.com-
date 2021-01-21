@@ -14,6 +14,7 @@ import Paint10 from './LiberteNoire/Paintings/Paint10/Paint10';
 
 const BhmPage = () => {
 
+
     return (
         <React.Fragment>
 
