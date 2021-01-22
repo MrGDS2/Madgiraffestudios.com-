@@ -10,13 +10,11 @@ const Paint2 = () => {
 
   const [name, setName] = useState('');
   const [image, setImage] = useState('');
-  const [likeCount, setLikedCount]= useState('');
   const [description, setDescription] = useState('');
 
   firebase.database().ref("Ladies").once("value", snapshot => {
     setName(snapshot.child("name").val());
     setImage(snapshot.child("image").val());
-    setLikedCount(snapshot.child("price").val());
     setDescription(snapshot.child("description").val());
   });
 

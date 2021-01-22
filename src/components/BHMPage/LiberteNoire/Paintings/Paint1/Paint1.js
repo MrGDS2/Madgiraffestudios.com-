@@ -9,16 +9,13 @@ import OrderButton from '../../../../OrderButton/OrderButton';
 
 
 const Paint1 = () => {
-  let count=0;
   const [name, setName] = useState('');
   const [image, setImage] = useState('');
-  const [likeCount, setLikedCount]= useState(0);
   const [description, setDescription] = useState('');
 
   firebase.database().ref("Grown").once("value", snapshot => {
     setName(snapshot.child("name").val());
     setImage(snapshot.child("image").val());
-    setLikedCount(snapshot.child("price").val());
     setDescription(snapshot.child("description").val());
   });
    

@@ -34,7 +34,7 @@ class LikeButton extends Component {
 
             <div className="counter">
 
-                <Button type="submit" variant="outline-light" size="lg" onChange={this.handleCount} onClick={this.incrementLike} id="heart"> <ImHeart />  {this.state.count} Likes</Button>
+                <Button type="submit" variant="outline-light" size="lg" onChange={this.handleCount} onClick={this.incrementLike} {...Painting} id="heart"> <ImHeart />  {this.state.count} Likes</Button>
 
             </div>
         )
