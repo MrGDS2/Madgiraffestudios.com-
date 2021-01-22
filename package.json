@@ -15,6 +15,7 @@
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
     "react-google-recaptcha": "^2.1.0",
+    "react-icons": "^4.1.0",
     "react-image-gallery": "^1.0.8",
     "react-images": "^1.1.7",
     "react-responsive-carousel": "^3.2.11",
@@ -25,7 +26,6 @@
     "reactstrap": "^8.5.1",
     "sass": "^1.26.10",
     "sweetalert": "^2.1.2"
-  
   },
   "scripts": {
     "start": "react-scripts start",

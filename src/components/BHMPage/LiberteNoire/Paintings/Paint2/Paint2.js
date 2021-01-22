@@ -3,18 +3,20 @@ import firebase from '../../../../../Firebase';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../../../LiberteNoire/Paintings/Paintings.scss';
-
+import LikeButton from '../../../../LikeButton/LikeButton';
 
 
 const Paint2 = () => {
 
   const [name, setName] = useState('');
   const [image, setImage] = useState('');
+  const [likeCount, setLikedCount]= useState('');
   const [description, setDescription] = useState('');
 
   firebase.database().ref("Ladies").once("value", snapshot => {
     setName(snapshot.child("name").val());
     setImage(snapshot.child("image").val());
+    setLikedCount(snapshot.child("price").val());
     setDescription(snapshot.child("description").val());
   });
 
@@ -43,6 +45,7 @@ const Paint2 = () => {
               <p className="show-text mb-5 studio-text" id="third">
                 {description}
               </p>
+              <LikeButton name={"Ladies"}/>
             </div>
           </div>
         </div>

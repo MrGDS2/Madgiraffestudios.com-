@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 import giraffeicon from '../../Images/icon.png';
 import Booking from '../Booking/Booking';
 
