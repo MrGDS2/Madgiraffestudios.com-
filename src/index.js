@@ -20,6 +20,7 @@ import Paint7 from './components/BHMPage/LiberteNoire/Paintings/Paint7/Paint7';
 import Paint8 from './components/BHMPage/LiberteNoire/Paintings/Paint8/Paint8';
 import Paint9 from './components/BHMPage/LiberteNoire/Paintings/Paint9/Paint9';
 import Paint10 from './components/BHMPage/LiberteNoire/Paintings/Paint10/Paint10';
+
 const routing = (
     <Router>
         <NavigationBar/>
