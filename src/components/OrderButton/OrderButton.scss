@@ -1,7 +1,11 @@
 .checkout-txt{
     font-size: 24px;
 }
-
+// #checkout-btn{
+//     margin: auto;
+//     width: 50%;
+//     padding: 10px;
+// }
 @media only screen and (max-width:991px) {
     #order-btn {
         margin: 0px -276px;
@@ -9,9 +13,10 @@
         margin-right: auto;
     }
     #checkout-btn{
-        margin-left: 98px;
-        margin-right: auto;
-        margin-top: 15px;
+        margin: auto;
+        width: 50%;
+        
+        padding: 10px;
     }
     #paypal-btns{
         position: relative;

@@ -1,25 +1,28 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
-import React, { useState, useImperativeHandle, forwardRef } from 'react';
+import React, { useState } from 'react';
 import * as emailjs from 'emailjs-com';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
-import { ImPaypal,ImCart } from "react-icons/im";
+import { ImPaypal, ImCart } from "react-icons/im";
 import firebase from '../../Firebase';
 import { PayPalButton } from "react-paypal-button-v2";
 import swal from 'sweetalert';
 import ReCAPTCHA from "react-google-recaptcha";
-import './OrderModule.scss'
+import './OrderModule.scss';
 
 
 const OrderModule = (props) => {
 
+    
     const [modal, setModal] = useState(false);
+    const [isVerified, setVerification] = useState(false);
     const [checkout, setCheckOut] = useState(false);
+
+
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [sizeOfPrint, setSizeOfPrint] = useState('');
     const [price, setPrice] = useState('');
-    const [painting, setPainting] = useState('');
 
     const toggle = () => setModal(!modal);
 
@@ -29,17 +32,73 @@ const OrderModule = (props) => {
             console.log("Size: " + snapshot.val());
         });
     }
+
+
+
+    const isEnabled = email.length > 0 && isVerified;
+    let emailSent = false;
+    const verifyCallback = () => {
+        setVerification(true);
+    }
+    const handleSubmit = () => {
+        setModal(!modal);
+
+        let templateParams = {
+            name: fullName,
+            from_name: email,
+            to_name: 'Madgiraffestudios',
+            size: sizeOfPrint,
+            price: price,
+            painting: props.name,
+            img: props.image
+        }
+
+        handleVerification(templateParams);
+
+    }
+
+
+    const handleVerification = (templateParams) => {
+
+        if (isVerified) {
+            emailjs.send(
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_ORDER_TEMPLATE,
+                templateParams,
+                process.env.REACT_APP_USER_ID_EMAILJS
+            ).then(function (response) {
+                console.log("Message sent to Madgiraffe");
+                swal({
+                    title: `Thank You for your purchase ${fullName}!`,
+                    text: `Check your E-mail for shipping updates!`,
+                    icon: "success",
+                    timer: 5000,
+                    buttons: { cancel: null }
+
+                });
+                emailSent = true;
+            }, function (error) {
+                console.log("NO Message sent to Madgiraffe: " + error);
+            });
+            clearForm();
+        }
+    }
+    const clearForm = () => {
+        setFullName('');
+        setEmail('');
+    }
+
     return (
         <div>
             <Button type="submit" variant="outline-light" size="lg" className="mb-5" id="order-btn" onClick={toggle}>
-                <ImPaypal /> Order Prints</Button>
+                <ImPaypal/> Order Prints</Button>
             <Modal isOpen={modal} toggle={toggle}>
 
                 <div className="modal-head-order">
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" className="x-btn">&times;</span>
+                        <span aria-hidden="true" onClick={() => setModal(!modal)} className="x-btn">&times;</span>
                     </button>
-                    <ModalHeader className="bhm-primary text-white">Order Form</ModalHeader>
+                    <ModalHeader className="bhm-primary text-white">Order Form: {props.name}</ModalHeader>
                 </div>
                 <ModalBody className="font-weight-bold">
                     <Form>
@@ -62,26 +121,31 @@ const OrderModule = (props) => {
                                 <option>13 x 19</option>
                             </Input>
                         </FormGroup>
-                        {/* <ReCAPTCHA className="mb-4 d-flex justify-content-center"
-                        sitekey={process.env.REACT_APP_SITE_KEY}
-                        onChange={verifyCallback}
-                    /> */}
+                        <ReCAPTCHA className="mb-4 d-flex justify-content-center"
+                            sitekey={process.env.REACT_APP_SITE_KEY}
+                            onChange={verifyCallback}
+                        />
                         <p className="checkout-txt">Checkout Total: ${price} </p>
                         <div className="paypal-btn">
                             {checkout ? (
                                 <PayPalButton
                                     amount={price}
+                                
                                     // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
                                     onSuccess={(details, data) => {
-                                        // swal({
-                                        //     title: "Message on the way!",
-                                        //     text: `We can't wait to work with you, ${fullName}!`,
-                                        //     icon: "success",
-                                        //     timer: 5000,
-                                        //     buttons: { cancel: null }
-                                           
-                                        //   })
-                                        swal("Transaction completed by " + details.payer.name.given_name);
+                                        //send email to user and business
+                                        handleSubmit();
+                                        if(!emailSent) {
+                                            swal({
+                                                title: `Thank You for your purchase ${fullName}!`,
+                                                text: `We are working on your order now`,
+                                                icon: "success",
+                                                timer: 5000,
+                                                buttons: { cancel: null }
+                            
+                                            });
+                                            console.log("NO Email sent!");
+                                         }else console.log("Email sent!");
                                         // OPTIONAL: Call your server to save the transaction
                                         return fetch("/paypal-transaction-complete", {
                                             method: "post",
@@ -89,13 +153,28 @@ const OrderModule = (props) => {
                                                 orderID: data.orderID
                                             })
                                         });
+
+                                    }}
+                                    catchError={(err) => {
+                                        console.log("FAILED: " + err);
+                                        swal({
+                                            title: "Oops!",
+                                            text: "Payment not sent please check user account or select a different form of payment",
+                                            icon: "error",
+                                            timer: 5000,
+                                            buttons: { cancel: null }
+                                        })
                                     }}
                                 />
                             ) : (
-                                    <Button onClick={() => {
-                                        setCheckOut(true);
-                                    }} size="lg" className="mb-5" id="checkout-btn" >
-                                        Checkout <ImCart/></Button>
+
+                                    <div className="container " id="checkout-btn">
+                                        <Button onClick={() => {
+                                            setCheckOut(true);
+                                        }} size="lg" className="mb-5" disabled={!isEnabled} >
+                                            Checkout <ImCart /></Button>
+                                    </div>
+
                                 )}
 
                         </div>

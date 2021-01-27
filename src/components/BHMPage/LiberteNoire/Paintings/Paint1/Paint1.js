@@ -1,12 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState} from 'react';
 import firebase from '../../../../../Firebase';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../../../LiberteNoire/Paintings/Paintings.scss';
 import LikeButton from '../../../../LikeButton/LikeButton';
-import OrderButton from '../../../../OrderButton/OrderButton';
 import OrderModule from '../../../../OrderModule/OrderModule';
-import PayPalButton from '../../../../PayPal/PayPal'
+
 
 
 const Paint1 = () => {
@@ -49,7 +48,7 @@ const Paint1 = () => {
               <p className="show-text mb-5 studio-text">
                 {description}
               </p>
-              <OrderModule/>
+              <OrderModule name={"Grown"} image={image}/>
               <LikeButton name={"Grown"} />
 
             </div>
