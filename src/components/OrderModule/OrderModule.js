@@ -116,9 +116,8 @@ const OrderModule = (props) => {
                             <Input type="select" name="size" value={sizeOfPrint} onChange={e => setSizeOfPrint(e.target.value)} title="Please tell us what size you would like printed" required>
                                 <option></option>
                                 <option disabled > -- Select a size for your print -- </option>
-                                <option>30 X 40</option>
                                 <option>16 x 20</option>
-                                <option>13 x 19</option>
+                                <option>18 X 24</option>
                             </Input>
                         </FormGroup>
                         <ReCAPTCHA className="mb-4 d-flex justify-content-center"

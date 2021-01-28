@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../../../LiberteNoire/Paintings/Paintings.scss';
 import LikeButton from '../../../../LikeButton/LikeButton';
+import OrderModule from '../../../../OrderModule/OrderModule';
 
 
 const Paint3 = () => {
@@ -43,6 +44,7 @@ const Paint3 = () => {
               <p className="show-text mb-5 studio-text">
                 {description}
               </p>
+              <OrderModule name={name} image={image}/>
               <LikeButton name={"Camera"}/>
             </div>
           </div>
