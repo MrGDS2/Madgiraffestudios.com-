@@ -27,6 +27,7 @@ const routing = (
         <NavigationBar/>
         <Switch>
           <Route path='/' exact component={Home} />
+          <Route path='/home' exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/gallery"  exact component={Gallery}/>
           <Route path="/LiberteNoir" exact component={Showcase}/>

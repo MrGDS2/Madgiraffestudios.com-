@@ -21,6 +21,7 @@
     "react-images": "^1.1.7",
     "react-paypal-button-v2": "^2.6.2",
     "react-responsive-carousel": "^3.2.11",
+    "react-responsive-picture": "^3.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
