@@ -45,8 +45,8 @@ const Paint8 = () => {
               <p className="show-text mb-5 studio-text">
                 {description}
               </p>
-              <OrderModule name={name} image={image}/>
-              <LikeButton name="Smoking"/>
+              <OrderModule name={name} image={image} />
+              <LikeButton name="Smoking" />
             </div>
           </div>
 

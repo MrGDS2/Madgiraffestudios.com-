@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './index.css';
-import './App.scss';
 import * as serviceWorker from './serviceWorker';
 import NavigationBar from './components/Navigation/NavigationBar';
 import Home from './components/Home/Home';
@@ -20,6 +18,9 @@ import Paint7 from './components/BHMPage/LiberteNoire/Paintings/Paint7/Paint7';
 import Paint8 from './components/BHMPage/LiberteNoire/Paintings/Paint8/Paint8';
 import Paint9 from './components/BHMPage/LiberteNoire/Paintings/Paint9/Paint9';
 import Paint10 from './components/BHMPage/LiberteNoire/Paintings/Paint10/Paint10';
+import Showcase from './components/BHMPage/Showcase';
+import './index.css';
+import './App.scss';
 
 const routing = (
     <Router>
@@ -28,17 +29,18 @@ const routing = (
           <Route path='/' exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/gallery"  exact component={Gallery}/>
-          <Route path="/BHM"  exact component={BhmPage}/>
-          <Route path="/BHM/img1" exact component={Paint1}/>
-          <Route path="/BHM/img2" exact component={Paint2}/>
-          <Route path="/BHM/img3" exact component={Paint3}/>
-          <Route path="/BHM/img4" exact component={Paint4}/>
-          <Route path="/BHM/img5" exact component={Paint5}/>
-          <Route path="/BHM/img6" exact component={Paint6}/>
-          <Route path="/BHM/img7" exact component={Paint7}/>
-          <Route path="/BHM/img8" exact component={Paint8}/>
-          <Route path="/BHM/img9" exact component={Paint9}/>
-          <Route path="/BHM/img10" exact component={Paint10}/>
+          <Route path="/LiberteNoir" exact component={Showcase}/>
+          <Route path="/LiberteNoir/Gallery"  exact component={BhmPage}/>
+          <Route path="/LiberteNoir/Grown" exact component={Paint1}/>
+          <Route path="/LiberteNoir/Mpumelelo" exact component={Paint2}/>
+          <Route path="/LiberteNoir/AllEyesOnYou" exact component={Paint3}/>
+          <Route path="/LiberteNoir/IGotYou" exact component={Paint4}/>
+          <Route path="/LiberteNoir/CoilsOfWarriors" exact component={Paint5}/>
+          <Route path="/LiberteNoir/Joy" exact component={Paint6}/>
+          <Route path="/LiberteNoir/Love" exact component={Paint7}/>
+          <Route path="/LiberteNoir/FeminineExhalation" exact component={Paint8}/>
+          <Route path="/LiberteNoir/Js" exact component={Paint9}/>
+          <Route path="/LiberteNoir/LiberteNoire" exact component={Paint10}/>
         </Switch>
         <Footer/>
     </Router>

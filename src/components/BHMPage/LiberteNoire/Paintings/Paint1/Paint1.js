@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../../../LiberteNoire/Paintings/Paintings.scss';
 import LikeButton from '../../../../LikeButton/LikeButton';
 import OrderModule from '../../../../OrderModule/OrderModule';
-
+import FadeIn from 'react-fade-in';
 
 
 const Paint1 = () => {
@@ -26,6 +26,7 @@ const Paint1 = () => {
     <React.Fragment>
 
       <Carousel showThumbs={false} showArrows={false} showIndicators={false} showStatus={false}>
+        <FadeIn>
         <div className="container ">
           <div className="container pb-5" id="about">
             <div className="text-center pt-5 mx-auto">
@@ -55,6 +56,7 @@ const Paint1 = () => {
           </div>
 
         </div>
+        </FadeIn>
       </Carousel>
     </React.Fragment>
   )
