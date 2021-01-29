@@ -14,7 +14,7 @@ const EnterGallery =() =>{
   return(
     <div>
     
-      <Button onClick={goToShow} variant="outline-light" size="lg" className="mb-5" id="entr-btn">
+      <Button type="submit" onClick={goToShow} variant="outline-light" size="lg" className="mb-5">
           <RiGalleryFill/> Enter Showcase</Button>
      
 

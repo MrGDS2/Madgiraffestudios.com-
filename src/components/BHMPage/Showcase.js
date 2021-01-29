@@ -37,7 +37,7 @@ const Showcase = () => {
             <div className="row">
               <div className="col-2 enterShow-col" id="blm-description">
                 <div className="mb-5 blm-text blm-des">{description}</div>
-                <div id="enter-btn"> <EnterGallery /></div>
+                
               </div>
               <div className="col-8" id="blm-img" >
                 <img src={image} id="blmIMG" alt="main-img" />
@@ -50,13 +50,12 @@ const Showcase = () => {
                 <div className="mb-5 blm-text blm-local">{location}</div>
                 <div id="blm-heart">
                   <LikeButton name={"ShowCover"} />
+                  
                 </div>
-
+              
               </div>
-
-
-
             </div>
+            <div id="enter-btn"> <EnterGallery /></div>
           </div>
 
         </Carousel>
