@@ -10,11 +10,12 @@ $Liberte: #A9A9A9;
 
 .showTitle {
     margin-bottom: 5px;
-    color: #A9A9A9;
+    color: $Liberte;
 }
 
 .show-text {
-    color: #A9A9A9;
+    color: $Liberte;
+    margin-top: 52px;
 }
 
 .carousel-root {
@@ -45,10 +46,11 @@ $Liberte: #A9A9A9;
     }
 
     .show-text {
+
         color: $Liberte;
         margin-top: 316px;
         font-size: 21px;
-        margin: 367px -99px;
+        margin: 367px -254px;
         width: auto;
         margin-right: auto;
 
@@ -80,17 +82,31 @@ $Liberte: #A9A9A9;
 
     #noir-img {
         order: 2 !important;
+        margin: 77px -82px;
+        margin-right: auto;
+    }
+
+    #noir-long {
+        order: 2 !important;
+        margin: 77px -167px;
+        margin-right: auto;
+    }
+
+    #noir-title2 {
+        order: 2 !important;
         margin: 77px -167px;
         margin-right: auto;
 
     }
 
     #noir-title {
+
         order: 1 !important;
-        margin: -41px 24px;
+        margin: -41px auto;
         transform: rotate(0deg);
         font-size: 49px;
     }
+
     #hair {
         order: 2 !important;
         margin: 105px -167px;
@@ -105,7 +121,7 @@ $Liberte: #A9A9A9;
         margin: 393px -99px;
         width: auto;
         margin-right: auto;
-    }
 
+    }
 
 }

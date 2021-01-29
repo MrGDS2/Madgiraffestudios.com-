@@ -119,16 +119,18 @@ const handleVerification=(templateParams)=>{
                  </FormGroup>
                  <FormGroup >
                      <Label for="phone" className="d-block text-left">Phone</Label>
-                     <Input type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="123-456-7890" title="Please put in phone number format 123-456-7890"/>
+                     <Input type="tel" name="phone" pattern="\d{3})\-?(\d{3})\-?(\d{4})/" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="123-456-7890" title="Please put in phone number format 123-456-7890"/>
                  </FormGroup>
                  <FormGroup className="form-group required">
                      <Label for="email" className="d-block text-left control-label">What would you like?</Label>
-                     <Input type="select"   name="subject" value={subject} onChange={e=>setSubject(e.target.value)} title="Please tell us what you would like done" required>
+                     <Input type="select" name="subject" value={subject} onChange={e=>setSubject(e.target.value)} title="Please tell us what you would like done" required>
                      <option></option>
                      <option disabled > -- select an option -- </option>
                          <option>Photo Shoot</option>
                          <option>Graphic Design</option>
                          <option>Illustration</option>
+                         <option >Painting</option>
+                         <option>Other</option>
                      </Input>
                  </FormGroup>
      

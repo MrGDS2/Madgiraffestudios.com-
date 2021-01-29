@@ -1,0 +1,34 @@
+.checkout-txt{
+    font-size: 24px;
+}
+// #checkout-btn{
+//     margin: auto;
+//     width: 50%;
+//     padding: 10px;
+// }
+@media only screen and (max-width:991px) {
+    #order-btn {
+        margin: 0px -276px;
+        width: auto;
+        margin-right: auto;
+    }
+    #checkout-btn{
+        margin: auto;
+        width: 50%;
+        
+        padding: 10px;
+    }
+    #paypal-btns{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        min-height: 35px;
+        min-width: 200px;
+        max-width: 750px;
+        font-size: 0;
+        margin: 0px -345px;
+        width: auto;
+        margin-right: auto;
+    }
+
+}
