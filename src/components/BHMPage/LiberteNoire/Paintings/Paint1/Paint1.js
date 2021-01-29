@@ -26,7 +26,7 @@ const Paint1 = () => {
     <React.Fragment>
 
       <Carousel showThumbs={false} showArrows={false} showIndicators={false} showStatus={false}>
-        <FadeIn>
+        <FadeIn transitionDuration="1000">
         <div className="container ">
           <div className="container pb-5" id="about">
             <div className="text-center pt-5 mx-auto">

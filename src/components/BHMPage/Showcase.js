@@ -3,9 +3,10 @@ import firebase from '../../Firebase';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import LikeButton from '../LikeButton/LikeButton';
-import './Showcase.scss';
 import EnterGallery from '../EnterGalleryButton/EnterGalleryButton';
 import FadeIn from 'react-fade-in';
+import './Showcase.scss';
+
 const Showcase = () => {
 
 
@@ -23,7 +24,7 @@ const Showcase = () => {
 
   return (
     <React.Fragment>
-      <FadeIn>
+      <FadeIn transitionDuration="2000">
         <Carousel showThumbs={false} showArrows={false} showIndicators={false} showStatus={false}>
 
           <div className="container ">
@@ -37,10 +38,12 @@ const Showcase = () => {
             <div className="row">
               <div className="col-2 enterShow-col" id="blm-description">
                 <div className="mb-5 blm-text blm-des">{description}</div>
-                
+
               </div>
-              <div className="col-8" id="blm-img" >
-                <img src={image} id="blmIMG" alt="main-img" />
+              <div className="col-8">
+
+                <div className="blm-img"> <img src={image} id="blmIMG" alt="main-img" /> </div>
+
                 {/* donate button */}
 
               </div>
@@ -50,9 +53,9 @@ const Showcase = () => {
                 <div className="mb-5 blm-text blm-local">{location}</div>
                 <div id="blm-heart">
                   <LikeButton name={"ShowCover"} />
-                  
+
                 </div>
-              
+
               </div>
             </div>
             <div id="enter-btn"> <EnterGallery /></div>
