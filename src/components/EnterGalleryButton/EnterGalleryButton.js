@@ -9,7 +9,7 @@ const EnterGallery =() =>{
   let history =useHistory();
 
   const goToShow=()=>{
-    history.push("/LiberteNoir/Gallery");
+    history.push("/LiberteNoire/Gallery");
   }
   return(
     <div>

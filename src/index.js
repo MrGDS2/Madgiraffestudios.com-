@@ -30,18 +30,18 @@ const routing = (
           <Route path='/home' exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/gallery"  exact component={Gallery}/>
-          <Route path="/LiberteNoir" exact component={Showcase}/>
-          <Route path="/LiberteNoir/Gallery"  exact component={BhmPage}/>
-          <Route path="/LiberteNoir/Grown" exact component={Paint1}/>
-          <Route path="/LiberteNoir/Mpumelelo" exact component={Paint2}/>
-          <Route path="/LiberteNoir/AllEyesOnYou" exact component={Paint3}/>
-          <Route path="/LiberteNoir/IGotYou" exact component={Paint4}/>
-          <Route path="/LiberteNoir/CoilsOfWarriors" exact component={Paint5}/>
-          <Route path="/LiberteNoir/Joy" exact component={Paint6}/>
-          <Route path="/LiberteNoir/Love" exact component={Paint7}/>
-          <Route path="/LiberteNoir/FeminineExhalation" exact component={Paint8}/>
-          <Route path="/LiberteNoir/Js" exact component={Paint9}/>
-          <Route path="/LiberteNoir/LiberteNoire" exact component={Paint10}/>
+          <Route path="/LiberteNoire" exact component={Showcase}/>
+          <Route path="/LiberteNoire/Gallery"  exact component={BhmPage}/>
+          <Route path="/LiberteNoire/Grown" exact component={Paint1}/>
+          <Route path="/LiberteNoire/Mpumelelo" exact component={Paint2}/>
+          <Route path="/LiberteNoire/AllEyesOnYou" exact component={Paint3}/>
+          <Route path="/LiberteNoire/IGotYou" exact component={Paint4}/>
+          <Route path="/LiberteNoire/CoilsOfWarriors" exact component={Paint5}/>
+          <Route path="/LiberteNoire/Joy" exact component={Paint6}/>
+          <Route path="/LiberteNoire/Love" exact component={Paint7}/>
+          <Route path="/LiberteNoire/FeminineExhalation" exact component={Paint8}/>
+          <Route path="/LiberteNoire/Js" exact component={Paint9}/>
+          <Route path="/LiberteNoire/LiberteNoire" exact component={Paint10}/>
         </Switch>
         <Footer/>
     </Router>

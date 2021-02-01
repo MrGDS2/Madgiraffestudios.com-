@@ -12,12 +12,17 @@ const Paint5 = () => {
   const [name, setName] = useState('');
   const [image, setImage] = useState('');
   const [description, setDescription] = useState('');
-
+  const [show, setShowName] = useState('');
   firebase.database().ref("Hair").once("value", snapshot => {
     setName(snapshot.child("name").val());
     setImage(snapshot.child("image").val());
     setDescription(snapshot.child("description").val());
   });
+
+  firebase.database().ref("ShowCover").once("value", snapshot => {
+    setShowName(snapshot.child("Title").val());
+  });
+
 
 
   return (
@@ -28,8 +33,8 @@ const Paint5 = () => {
             <div className="container pb-5" id="about">
               <div className="text-center pt-5 mx-auto">
                 <h1 className="showTitle font-weight-bold p-3 secondary-color">
-                  Liberté Noir Showcase
-                            </h1>
+                  {show}
+                </h1>
               </div>
             </div>
             <div className="row mt-5 pb-5">
