@@ -14,6 +14,7 @@ const Showcase = () => {
   const [image, setImage] = useState('');
   const [location, setLocation] = useState('');
   const [description, setDescription] = useState('');
+
   firebase.database().ref("ShowCover").once("value", snapshot => {
     setName(snapshot.child("Title").val());
     setImage(snapshot.child("CoverImg").val());
