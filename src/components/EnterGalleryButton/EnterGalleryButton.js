@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { RiGalleryFill } from "react-icons/ri";
 import '../OrderModule/OrderModule.scss';
-import ReactGA from 'react-ga';
 
 const EnterGallery = () => {
 
