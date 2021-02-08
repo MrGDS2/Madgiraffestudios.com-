@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ImHeart } from "react-icons/im";
 import { Button } from 'react-bootstrap';
 import firebase from '../../Firebase';
+
 import './Like.scss';
 
 const Painting = {
@@ -34,7 +35,7 @@ class LikeButton extends Component {
 
             <div className="counter">
 
-                <Button type="submit" variant="light" size="lg" onChange={this.handleCount} onClick={this.incrementLike} {...Painting} id="heart"> <ImHeart />  {this.state.count} Likes</Button>
+                <Button type="submit" variant="danger" size="lg" onChange={this.handleCount} onClick={this.incrementLike} {...Painting} id="heart"> <ImHeart />  {this.state.count} Likes</Button>
 
             </div>
         )

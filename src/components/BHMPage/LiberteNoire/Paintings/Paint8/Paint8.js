@@ -5,8 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../../../LiberteNoire/Paintings/Paintings.scss';
 import LikeButton from '../../../../LikeButton/LikeButton';
 import OrderModule from '../../../../OrderModule/OrderModule';
-
-
+import FadeIn from 'react-fade-in';
+import ReactGA from 'react-ga';
 
 const Paint8 = () => {
 
@@ -14,6 +14,8 @@ const Paint8 = () => {
   const [image, setImage] = useState('');
   const [description, setDescription] = useState('');
   const [show, setShowName] = useState('');
+
+  ReactGA.pageview('/LiberteNoire/FeminineExhalation');
 
   firebase.database().ref("Smoking").once("value", snapshot => {
     setName(snapshot.child("name").val());
@@ -28,6 +30,7 @@ const Paint8 = () => {
   return (
     <React.Fragment>
       <Carousel showThumbs={false} showArrows={false} showIndicators={false} showStatus={false}>
+      <FadeIn>
         <div className="container ">
           <div className="container pb-5" id="about">
             <div className="text-center pt-5 mx-auto">
@@ -55,6 +58,7 @@ const Paint8 = () => {
           </div>
 
         </div>
+        </FadeIn>
       </Carousel>
     </React.Fragment>
   )

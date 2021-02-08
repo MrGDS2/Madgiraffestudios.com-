@@ -6,6 +6,7 @@ import '../../../LiberteNoire/Paintings/Paintings.scss';
 import LikeButton from '../../../../LikeButton/LikeButton';
 import OrderModule from '../../../../OrderModule/OrderModule';
 import FadeIn from 'react-fade-in';
+import ReactGA from 'react-ga';
 
 const Paint4 = () => {
 
@@ -13,6 +14,8 @@ const Paint4 = () => {
   const [image, setImage] = useState('');
   const [description, setDescription] = useState('');
   const [show, setShowName] = useState('');
+
+  ReactGA.pageview('/LiberteNoire/IGotYou');
 
   firebase.database().ref("Together").once("value", snapshot => {
     setName(snapshot.child("name").val());
