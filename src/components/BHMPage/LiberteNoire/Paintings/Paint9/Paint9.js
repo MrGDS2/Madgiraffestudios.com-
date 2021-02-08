@@ -6,7 +6,7 @@ import '../../../LiberteNoire/Paintings/Paintings.scss';
 import LikeButton from '../../../../LikeButton/LikeButton';
 import OrderModule from '../../../../OrderModule/OrderModule';
 import FadeIn from 'react-fade-in';
-
+import ReactGA from 'react-ga';
 
 const Paint9 = () => {
 
@@ -15,6 +15,8 @@ const Paint9 = () => {
   const [description, setDescription] = useState('');
   const [show, setShowName] = useState('');
   
+  ReactGA.pageview('/LiberteNoire/Js');
+
   firebase.database().ref("Sneakers").once("value", snapshot => {
     setName(snapshot.child("name").val());
     setImage(snapshot.child("image").val());

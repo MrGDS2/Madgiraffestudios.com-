@@ -5,10 +5,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import LikeButton from '../LikeButton/LikeButton';
 import EnterGallery from '../EnterGalleryButton/EnterGalleryButton';
 import FadeIn from 'react-fade-in';
+import ReactGA from 'react-ga';
 import './Showcase.scss';
 
 const Showcase = () => {
 
+
+
+  ReactGA.pageview('/LiberteNoire');
 
   const [name, setName] = useState('');
   const [image, setImage] = useState('');
@@ -22,7 +26,8 @@ const Showcase = () => {
     setDescription(snapshot.child("description").val());
   });
 
-
+ 
+  
   return (
     <React.Fragment>
       <FadeIn transitionDuration="2000">

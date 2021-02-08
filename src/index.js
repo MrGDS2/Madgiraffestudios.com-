@@ -19,8 +19,13 @@ import Paint8 from './components/BHMPage/LiberteNoire/Paintings/Paint8/Paint8';
 import Paint9 from './components/BHMPage/LiberteNoire/Paintings/Paint9/Paint9';
 import Paint10 from './components/BHMPage/LiberteNoire/Paintings/Paint10/Paint10';
 import Showcase from './components/BHMPage/Showcase';
+import ReactGA from 'react-ga';
 import './index.css';
 import './App.scss';
+
+
+ReactGA.initialize('UA-155312763-1');
+ReactGA.pageview('/');
 
 const routing = (
     <Router>
@@ -46,6 +51,8 @@ const routing = (
         <Footer/>
     </Router>
   )
+
+ 
 
 ReactDOM.render(routing, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
