@@ -118,6 +118,7 @@ const OrderModule = (props) => {
                                 <option disabled > -- Select a size for your print -- </option>
                                 <option>16 x 20</option>
                                 <option>18 X 24</option>
+                                <option>30 X 40</option>
                             </Input>
                         </FormGroup>
                         <ReCAPTCHA className="mb-4 d-flex justify-content-center"
