@@ -90,7 +90,7 @@ const OrderModule = (props) => {
 
     return (
         <div>
-            <Button type="submit" variant="outline-light" size="lg" className="mb-5" id="order-btn" onClick={toggle}>
+            <Button type="submit" variant="outline-light" size="lg" className="mb-5" id="order-btn" onClick={toggle} disabled>
                 <ImPaypal/> Order Prints</Button>
             <Modal isOpen={modal} toggle={toggle}>
 
