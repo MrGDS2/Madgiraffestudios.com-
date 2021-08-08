@@ -1,5 +1,6 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
+$bg-primary: #4F3A65;
 
 .gallery-row { 
     margin-bottom: 50px;   
@@ -18,7 +19,6 @@
     height: -webkit-fill-available;
 }
 
-
   .img-gallery span {
   
     position: relative; 
@@ -30,13 +30,12 @@
 
   }
 
-
-  
-.image-container:hover .img-description {
-    display: block;
-    background: #4F3A65;
+.image-container:hover {
+    border: 1px solid;
+    padding: 0px;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 5px 2px $bg-primary;
 }
-
 
 .exit-btn {
     background-color: #F9F8FD;
@@ -48,9 +47,6 @@
         color: #8d18b4
     }
 }
-
-
-
 
 @media only screen and (max-width:1024px){
 
