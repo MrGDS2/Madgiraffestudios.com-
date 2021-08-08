@@ -121,7 +121,7 @@ const handleVerification=(templateParams)=>{
                  </FormGroup>
                  <FormGroup >
                      <Label for="phone" className="d-block text-left">Phone</Label>
-                     <PhoneInput placeholder="Example +1 914 208 9937"value={phone} onChange={setPhone}/>
+                     <PhoneInput placeholder="Example 914 208 9937" defaultCountry="US" value={phone} onChange={setPhone}/>
                  </FormGroup>
                  <FormGroup className="form-group required">
                      <Label for="email" className="d-block text-left control-label">What would you like?</Label>
