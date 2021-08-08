@@ -11,8 +11,8 @@ const Gallery = () => {
 
   const gallery = [
     {
-      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FtouchHands.jpg?alt=media&token=8b61b335-f8f1-4b12-ad52-80a629a36fe3' ,
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2FtouchHands.jpg?alt=media&token=8b61b335-f8f1-4b12-ad52-80a629a36fe3',
+      original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2F2021Icons%2Ftouch_remastered.png?alt=media&token=6fe8e559-4e5b-4405-b5f3-fb272d8827bd' ,
+      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2F2021Icons%2Ftouch_remastered.png?alt=media&token=6fe8e559-4e5b-4405-b5f3-fb272d8827bd',
       startIndex: 0,
       description: 'A true connection between two hearts...'
     },
@@ -169,7 +169,7 @@ const Gallery = () => {
   {
        original: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2F2021Icons%2FGameGillion.jpg?alt=media&token=fb256ac1-85de-42c3-816e-f67a055a5cb4',
     
-    thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FPhotoshoots%2F2021%2Fnai.jpg?alt=media&token=df6a4940-b995-4284-a11a-fa9d73c13f84',
+    thumbnail: 'https://firebasestorage.googleapis.com/v0/b/madgiraffestudiossite.appspot.com/o/Work%2FGraphics%2F2021Icons%2FGameGillion.jpg?alt=media&token=fb256ac1-85de-42c3-816e-f67a055a5cb4',
     startIndex: 19,
     description: 'Game Gillion logo on Tik Tok'
     
@@ -183,11 +183,6 @@ const Gallery = () => {
  
  },
   
-
-
-
-
-    
   ];
 
   const galleryImages = gallery.map((img) => 
