@@ -1,7 +1,9 @@
 import React, {useState, useImperativeHandle, forwardRef} from 'react';
 import * as emailjs from 'emailjs-com';
 import {Button,Modal,ModalHeader,ModalBody,ModalFooter} from 'reactstrap';
-import {FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+import {FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 import swal from 'sweetalert';
 import ReCAPTCHA from "react-google-recaptcha";
 import './Booking.scss'
@@ -119,7 +121,7 @@ const handleVerification=(templateParams)=>{
                  </FormGroup>
                  <FormGroup >
                      <Label for="phone" className="d-block text-left">Phone</Label>
-                     <Input type="tel" name="phone" pattern="\d{3})\-?(\d{3})\-?(\d{4})/" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="123-456-7890" title="Please put in phone number format 123-456-7890"/>
+                     <PhoneInput placeholder="Example 914 208 9937" defaultCountry="US" value={phone} onChange={setPhone}/>
                  </FormGroup>
                  <FormGroup className="form-group required">
                      <Label for="email" className="d-block text-left control-label">What would you like?</Label>
